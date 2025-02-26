@@ -1,5 +1,6 @@
 p {
   color: var(--gray700);
+  font-family: Ubuntu;
 }
 
 body {
@@ -11,15 +12,35 @@ body {
   font-weight: 700;
 }
 
-.button {
-  background: var(--orange);
-  color: white;
-  border-radius: 4px;
-  text-transform: uppercase;
-  width: 224px;
-  height: 52px;
-  line-height: 52px;
-  letter-spacing: .5px;
+.main__title {
+  font-family: Ubuntu;
+  font-size: 46px;
+  line-height: 59.8px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.text--l {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.subtitle {
+  font-family: Ubuntu;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.button__list {
+  background: transparent;
+  min-width: 48px;
+  height: 48px;
+  box-sizing: border-box;
 }
 
 .menu {

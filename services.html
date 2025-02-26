@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="icon" href="img/icon/Vector-X.svg">
-  <link rel="stylesheet" href="style_service.css">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="style_service.css">
   <link rel="stylesheet" href="footer.css">
   <title>Services</title>
 </head>
@@ -16,7 +16,7 @@
 <body>
   <header class="header">
     <nav class="menu header__menu">
-      <a href="homepage.html" id="log"><img class="logo header__logo"  src="img/logo/logo.png" alt="logo"></a>
+      <a href="homepage.html" id="logo"><img class="logo header__logo"  src="img/logo/logo.png" alt="logo"></a>
       <ul class="list header__list">
         <li class="items header__items">
           <a href="#" class="link header__link">About Us</a>
@@ -74,7 +74,7 @@
           augue. Mattis habitant venenatis, gravida posuere massa ac interdum. Eget
           aliquam dignissim ut vestibulum.
         </p>
-        <button type="button" class="button section__button">Lean more</button>
+        <a href="interior_design.html" class="btn section__button">Learn more</a>
       </article>
     </section>
 
@@ -86,7 +86,7 @@
           nulla lectus purus tincidunt massa tortor. Hendrerit vulputate elementum
           blandit massa vitae amet felis eget.
         </p>
-        <button type="button" class="button section__button">Lean more</button>
+        <a href="interior_design.html" class="btn section__button">Learn more</a>
       </article>
       <img class="image section__image" src="img/service/image_section_project.jpg" alt="project">
     </section>
@@ -102,19 +102,19 @@
           donec massa pellentesque nulla duis. Arcu dictum metus sed purus senectus
           faucibus eget elementum pretium.
         </p>
-        <button type="button" class="button section__button">Lean more</button>
+        <a href="interior_design.html" class="btn section__button">Learn more</a>
       </article>
     </section>
 
     <section class="section main__section">
       <article class="content section__content">
-        <h2 class="title section__title">Repairs</h2>
+        <h2 class="title section__title" id="repairs">Repairs</h2>
         <p class="section__text">
           Facilisis cursus feugiat sit pulvinar amet. Ac facilisi dictum commodo, tortor
           gravida pretium, orci. Nunc sit sollicitudin id egestas mattis. Turpis viverra nec
           urna ultrices urna.
         </p>
-        <button type="button" class="button section__button">Lean more</button>
+        <a href="interior_design.html" class="btn section__button">Learn more</a>
       </article>
       <img class="image section__image" src="img/service/image_section_repairs.jpg" alt="repairs">
     </section>
@@ -125,7 +125,7 @@
   <footer class="footer">
     <section class="sections footer__sections sections--top">
       <div class="footer__form">
-        <h2 class="footer__form-title">A quick way to discuss details</h2>
+        <h2 class="title footer__form-title">A quick way to discuss details</h2>
         <form class="form" action="wtf.php">
           <p class="form__text">Name*</p>
           <input type="name" name="name" placeholder="Your name">
@@ -182,7 +182,7 @@
       </article>
 
       <article class="footer__subscribe">
-        <h2 class="footer__subscribe-title">Let's stay in touch</h2>
+        <h2 class="title footer__subscribe-title">Let's stay in touch</h2>
         <form class="form" action="wtf.php">
           <input class="form__input-subscribe" type="email" name="email" placeholder="Your email address">
           <button class="button form__button button--subscribe" type="button">subscribe</button>
@@ -250,9 +250,7 @@
         <img src="img/icon/hart.svg" alt="hart">
         <p>by Createx Studio</p>
       </article>
-      <form action="#logo">
-        <button class="button top-button" type="button"><img src="img/icon/arrow.svg" alt="top"></button>
-      </form>
+      <a class="btn top-btn" href="#logo"><img src="img/icon/arrow.svg" alt="top"></a>
     </section>
   </footer>
 

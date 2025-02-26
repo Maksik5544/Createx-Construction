@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="icon" href="img/icon/Vector-X.svg">
-  <link rel="stylesheet" href="homepage.css">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="homepage_header.css">
+  <link rel="stylesheet" href="homepage.css">
   <link rel="stylesheet" href="footer.css">
   <title>Homepage</title>
 </head>
@@ -16,7 +16,7 @@
 <body>
   <header class="header">
     <nav class="menu header__menu">
-      <a href="homepage.html" id="logo"><img class="logo header__logo" src="img/logo/logo.png" alt="logo"></a>
+      <a href="homepage.html"><img class="logo header__logo" id="logo" src="img/logo/logo.png" alt="logo"></a>
       <ul class="items header__items">
         <li class="item header__item">
           <a href="#" class="link header__link">About Us</a>
@@ -77,18 +77,19 @@
   </header>
 
   <main class="main">
-    <header class="main__header">
-      <article class="main__article">
-        <h2>We are Createx Construction Bureau</h2>
-        <p>We are rightfully considered to be the best construction company in the USA.</p>
+    <header class="main__header">a
+      <section class="main__section main__video">
+        <h2 class="title main__title">We are Createx Construction Bureau</h2>
+        <p class="text main__header_text">We are rightfully considered to be the best construction company in the USA.
+        </p>
         <img class="createx_video" src="img/Homepage/video.png" alt="video">
-      </article>
+      </section>
 
       <article class="main__article">
-        <h2>Our core values</h2>
-        <p>Our mission is to set the highest standards for construction sphere.</p>
-        <ul class="main__items">
-          <li class="main__item">
+        <h2 class="title main__title">Our core values</h2>
+        <p class="text main__header_text">Our mission is to set the highest standards for construction sphere.</p>
+        <ul class="items main__items">
+          <li class="item main__item">
             <img src="img/icon/ic-like.svg" alt="like">
             <h3>Quality</h3>
             <p>
@@ -98,7 +99,7 @@
             </p>
           </li>
 
-          <li class="main__item">
+          <li class="item main__item">
             <img src="img/icon/ic-hand.svg" alt="hand">
             <h3>Safety</h3>
             <p>
@@ -108,7 +109,7 @@
             </p>
           </li>
 
-          <li class="main__item">
+          <li class="item main__item">
             <img src="img/icon/ic-slippers.svg" alt="slippers">
             <h3>Comfort</h3>
             <p>Sit veniam aute dolore adipisicing nulla
@@ -120,19 +121,19 @@
       </article>
 
       <div class="main__form">
-        <h2>Want to know more? Ask us a question:</h2>
+        <h3 class="subtitle">Want to know more? Ask us a question:</h3>
         <form class="form" action="wtf.php">
           <ul class="form__items">
             <li class="form__item">
-              <p class="form__text">Name</p>
+              <p class="text form__text text--l">Name</p>
               <input type="name" name="name" placeholder="Your name">
             </li>
             <li class="form__item">
-              <p class="form__text">Phone</p>
+              <p class="text form__text text--l">Phone</p>
               <input type="tel" name="tel" placeholder="Your phone number">
             </li>
             <li class="form__item item--message">
-              <p class="form__text">Message</p>
+              <p class="text form__text text--l">Message</p>
               <input type="text" name="text" placeholder="Your message">
             </li>
             <button class="button form__button" tupe="button">Send</button>
@@ -142,52 +143,52 @@
     </header>
 
     <section class="section main__section section--services">
-      <h2 class="title section__title">Our services</h2>
-      <p class="text section__text">Createx Construction Bureau is a construction giant with a full range of
+      <h2 class="title main__title">Our services</h2>
+      <p class="text section__text--services">Createx Construction Bureau is a construction giant with a full range of
         construction services.</p>
-      <div class="section__block">
-        <div class="block__items">
+
+      <ul class="block__items">
+        <li class="block__item">
           <img src="img/icon/ic-construction.svg" alt="construction">
-          <p>Construction</p>
-        </div>
+          <p class="text item__text">Construction</p>
+        </li>
 
-        <div class="block__items">
+        <li class="block__item">
           <img src="img/icon/ic-plan.svg" alt="plan">
-          <p>Project Development</p>
-        </div>
+          <p class="text item__text">Project Development</p>
+        </li>
 
-        <div class="block__items block--hover">
-          <img class="items--nohover" src="img/icon/ic-design_orange.svg" alt="design">
-          <img class="items--hover" src="img/icon/ic-design.svg" alt="design">
-          <p>Interior Design</p>
-        </div>
+        <li class="block__item block--hover">
+          <img class="item--nohover" src="img/icon/ic-design_orange.svg" alt="design">
+          <img class="item--hover" src="img/icon/ic-design.svg" alt="design">
+          <p class="text item__text">Interior Design</p>
+        </li>
 
-        <div class="block__items">
+        <li class="block__item">
           <img src="img/icon/ic-repairs.svg" alt="repairs">
-          <p>Repairs</p>
-        </div>
-      </div>
+          <p class="text item__text">Repairs</p>
+        </li>
+      </ul>
+
 
       <div class="services__link">
-        <h3>Learn more about our services</h3>
-        <form action="homepage.html">
-          <button class="button block__button button--services" type="button">View services</button>
-        </form>
+        <h3 class="subtitle services__subtitle">Learn more about our services</h3>
+        <a href="services.html" class="btn btn__services--link" type="button">View services</a>
       </div>
       <img class="bg__image-services" src="img/Homepage/bg-image-Our services.png" alt="bg-image">
     </section>
 
     <section class="section main__section section--tower">
       <article class="tower-header">
-        <h2 class="title section__title">
+        <h2 class="title main__title title--tower">
           Browse our selected projects
           and learn more about our work
         </h2>
 
-        <button class="button__list" type="button">
+        <button class="button__list button__list--hover" type="button">
           <img src="img/icon/arrow_Left.svg" alt="Right">
         </button>
-        <button class="button__list list--rights" type="button">
+        <button class="button__list button__list--hover list--rights" type="button">
           <img src="img/icon/arrow_rights_black.svg" alt="Right">
           <img src="img/icon/arrow_Right_white.svg" alt="Right">
         </button>
@@ -198,7 +199,7 @@
           <img src="img/Homepage/tower.jpg" alt="tower ">
           <article class="tower__project">
             <h3>Red Finger Building</h3>
-            <p>Business Centers</p>
+            <p class="text project__text text--l">Business Centers</p>
             <form action="#">
               <button class="button button--tower" type="button">View Project</button>
             </form>
@@ -209,7 +210,7 @@
           <img src="img/Homepage/glass_tower.png " alt="tower">
           <article class="tower__project">
             <h3>Cubes Building</h3>
-            <p>Business Centers</p>
+            <p class="text project__text text--l">Business Centers</p>
             <form action="#">
               <button class="button button--tower" type="button">View Project</button>
             </form>
@@ -220,7 +221,7 @@
           <img src="img/Homepage/triangular_tower.png" alt="tower">
           <article class="tower__project">
             <h3>The Pencil Building</h3>
-            <p>Stores & Malls</p>
+            <p class="text project__text text--l">Stores & Malls</p>
             <form action="#">
               <button class="button button--tower" type="button">View Project</button>
             </form>
@@ -228,47 +229,47 @@
         </div>
       </div>
       <div class="portfolio__link">
-        <h3>Explore all our works</h3>
-        <form action="#">
-          <button class="button block__button" type="button">View portfolio</button>
-        </form>
+        <h3 class="subtitle portfolio__subtitle">Explore all our works</h3>
+        <a href="#portfolio.html" class="btn">View portfolio</a>
       </div>
     </section>
 
     <section class="section main__section section--supported">
-      <h2>Supported by 12+ partners</h2>
+      <h2 class="title main__title">Supported by 12+ partners</h2>
       <ul class="section__items">
-        <li class="item-partners">
+        <li class="item item-partners">
           <img src="img/logo/In_depth_consulting.png" alt="">
         </li>
-        <li class="item-partners">
+        <li class="item item-partners">
           <img src="img/logo/higher_fit.png" alt="">
         </li>
-        <li class="item-partners">
+        <li class="item item-partners">
           <img src="img/logo/sentinal_consulting.png" alt="">
         </li>
-        <li class="item-partners">
+        <li class="item item-partners">
           <img src="img/logo/happy_home.png" alt="">
         </li>
-        <li class="item-partners">
+        <li class="item item-partners">
           <img src="img/logo/ForSale.png" alt="">
         </li>
-        <li class="item-partners">
+        <li class="item item-partners">
           <img src="img/logo/sunset_realily.png" alt="">
         </li>
       </ul>
       <article class="reviews">
-        <h2>What our clients are saying</h2>
+        <h2 class="title main__title">What our clients are saying</h2>
         <img class="item--profile" src="img/Homepage/profile-image.png" alt="profile">
-        <p>
+        <p class="text reviews__text">
           Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim.
           Consectetur magna cillum consequat minim laboris cillum laboris voluptate minim
           proident exercitation ullamco.
         </p>
         <div class="reviwes__swipe">
-          <p><span>Shawn Edwards</span><br>Position, Company name</p>
-          <button class="reviews__button" type="button"><img src="img/icon/arrow_Left.svg" alt=""></button>
-          <button class="reviews__button" type="button"><img src="img/icon/arrow_rights_black.svg" alt=""></button>
+          <p class="text text--l"><span>Shawn Edwards</span><br>Position, Company name</p>
+          <div class="reviwes__buttons">
+            <button class="button__list" type="button"><img src="img/icon/arrow_Left.svg" alt=""></button>
+            <button class="button__list" type="button"><img src="img/icon/arrow_rights_black.svg" alt=""></button>
+          </div>
         </div>
       </article>
       <img class="reviwes__img" src="img/Homepage/prorab.jpg" alt="img">
@@ -276,17 +277,17 @@
 
     <section class="section main__section section--news">
       <article class="section__facts">
-        <h2>Some facts and figures</h2>
-        <ul class="facts__progress">
-          <li class="progress progress--yellou">98%</li>
-          <li class="progress progress--pink">20</li>
-          <li class="progress progress--blue">9452</li>
-          <li class="progress progress--green">100%</li>
+        <h2 class="title main__title">Some facts and figures</h2>
+        <ul class="items facts__progress">
+          <li class="item item__progress progress--yellou">98%</li>
+          <li class="item item__progress progress--pink">20</li>
+          <li class="item item__progress progress--blue">9452</li>
+          <li class="item item__progress progress--green">100%</li>
         </ul>
       </article>
 
       <section class="section__news">
-        <h2>Recent news</h2>
+        <h2 class="title main__title">Recent news</h2>
         <section class="news__content">
           <div class="content content--1">
             <img class="img__content" src="img/Homepage/glass_rab.jpg" alt="img">
@@ -335,10 +336,8 @@
           </div>
         </section>
         <article class="news__posts">
-          <h3>Explore all our news posts</h3>
-          <form action="#">
-            <button class="button news__button" type="button">View all news</button>
-          </form>
+          <h3 class="subtitle">Explore all our news posts</h3>
+          <a class="btn news__btn" href="#">View all news</a>
         </article>
       </section>
     </section>
@@ -347,20 +346,20 @@
   <footer class="footer">
     <section class="sections footer__sections sections--top">
       <div class="footer__form">
-        <h2 class="footer__form-title">A quick way to discuss details</h2>
+        <h2 class="title footer__form-title">A quick way to discuss details</h2>
         <form class="form" action="wtf.php">
-          <p class="form__text">Name*</p>
+          <p class="text form__text">Name*</p>
           <input type="name" name="name" placeholder="Your name">
-          <p class="form__text">Phone*</p>
+          <p class="text form__text">Phone*</p>
           <input type="tel" name="tel" placeholder="Your phone number">
-          <p class="form__text">Email</p>
+          <p class="text form__text">Email</p>
           <input type="email" name="email" placeholder="Your working email">
-          <p class="form__text">Message*</p>
+          <p class="text form__text">Message*</p>
           <input type="text" name="text" placeholder="Your message">
           <input type="checkbox" name="checkbox">
           I agree to recieve communications from Createx Construction Bureau.
           </input>
-          <button class="button form__button" tupe="button">Send request</button>
+          <button class="button form__button" tupe="submit">Send request</button>
         </form>
       </div>
     </section>
@@ -395,7 +394,7 @@
             </a>
           </li>
         </ul>
-        <p class="footer__socseti-text">
+        <p class="text footer__socseti-text">
           Createx Construction Bureau has been successfully operating in the USA
           construction market since 2000. We are proud to offer you quality
           construction and exemplary service. Our mission is to set the highest
@@ -404,12 +403,12 @@
       </article>
 
       <article class="footer__subscribe">
-        <h2 class="footer__subscribe-title">Let's stay in touch</h2>
+        <h2 class="title footer__subscribe-title">Let's stay in touch</h2>
         <form class="form" action="wtf.php">
           <input class="form__input-subscribe" type="email" name="email" placeholder="Your email address">
-          <button class="button form__button button--subscribe" type="button">subscribe</button>
+          <button class="button form__button button--subscribe" type="submit">subscribe</button>
         </form>
-        <p class="footer__subscribe-text">
+        <p class="text footer__subscribe-text">
           *Subscribe to our newsletter to receive communications and early updates from Createx
           Construction Bureau.
         </p>
@@ -468,14 +467,11 @@
 
 
       <article class="section__copyright">
-        <p>© All rights reserved. Made with</p>
+        <p class="text">© All rights reserved. Made with</p>
         <img src="img/icon/hart.svg" alt="hart">
-        <p>by Createx Studio</p>
+        <p class="text">by Createx Studio</p>
       </article>
-      <form action="#logo">
-        <button class="button top-button" type="button"><img src="img/icon/arrow.svg" alt="top"></button>
-      </form>
-
+      <a class="btn top-btn" href="#logo"><img src="img/icon/arrow.svg" alt="top"></a>
     </section>
   </footer>
 </body>

@@ -1,0 +1,65 @@
+.main {
+    position: relative;
+}
+
+.block__items {
+    display: flex;
+    position: absolute;
+    left: 15%;
+    top: -12%;
+}
+
+.block__item {
+    width: 230px;
+    height: 154px;
+    margin: 0 1.5rem;
+    background: white;
+    align-content: center;
+    text-align: center;
+}
+
+.block__item:hover, 
+.block__item:hover .item__text, 
+.block__item:hover path {
+    background: var(--orange);
+    fill: white;
+    color: white;
+}
+
+.section__project {
+    margin: 15rem 16vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.btn__project {
+    padding: 12px 18px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 44px;
+    background: transparent;
+    color: var(--orange);
+    border: 1px solid var(--orange);
+  }
+
+.section__reviews {
+    align-content: center;
+    background: var(--gray300);
+    padding: 0 15vw;
+    height: 630px;
+}
+
+.reviwes__img--work {
+    bottom: 11%;
+}
+
+.section__clients {
+    margin: 10rem 12vw;
+    text-align: center;
+}
+
+.button__list{
+    background: transparent;
+    margin: 2rem 5px 0;
+}

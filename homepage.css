@@ -178,75 +178,80 @@
     }
   }
 
-  .section--tower {
+  .section__project {
     padding: 10rem 17.5vw;
 
-    .tower-header {
+    .project__header{
       max-width: 1250px;
       display: flex;
       align-items: flex-end;
 
-      .title--tower {
+      .project__title {
         margin-right: 40%;
       }
 
-      .button__list--hover:hover {
-        background: var(--orange);
-        border-radius: 50%;
-      }
+      .block__buttons {
+        display: inline-flex;
 
-      .list--rights {
-        img:nth-child(2) {
-          display: none;
-        }
-      }
 
-      .list--rights:hover {
-        img:nth-child(1) {
-          display: none;
+        .button__list--hover:hover {
+         background: var(--orange);
+          border-radius: 50%;
         }
 
-        img:nth-child(2) {
-          display: block;
-          margin: auto;
+        .list--rights {
+          img:nth-child(2) {
+            display: none;
+          }
+        }
+
+        .list--rights:hover {
+          img:nth-child(1) {
+            display: none;
+          }
+
+          img:nth-child(2) {
+            display: block;
+            margin: auto;
+          }
         }
       }
     }
 
-    .section__block {
+    .container__project {
       max-width: 1250px;
       display: flex;
       justify-content: space-between;
       margin: 5rem 0;
 
-      .block__tower {
+      .card__project {
         position: relative;
         max-width: 20vw;
         max-height: 440px;
         box-sizing: border-box;
         overflow: hidden;
 
-        img {
+        .project__img {
+          display: block;
           width: 21vw;
           height: 440px;
           z-index: -10;
         }
 
-        .tower__project {
+        .link__project {
           text-align: center;
           background: white;
           z-index: 10;
           position: absolute;
-          bottom: -45px;
+          bottom: -47px;
           width: 100%;
 
           .project__text {
             margin: 5px 0;
           }
 
-          .button--tower {
-            width: 172px;
-            height: 44px;
+          .btn__project {
+            padding: 12px 18px;
             font-weight: 700;
             font-size: 14px;
             line-height: 44px;
@@ -256,7 +261,7 @@
           }
         }
 
-        .tower__project:hover {
+        .link__project:hover {
           bottom: 0;
         }
       }

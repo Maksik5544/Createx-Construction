@@ -6,7 +6,7 @@
 }
 
 .main__section {
-  padding: 2rem 18vw;
+  padding: 2rem 16vw;
   align-items: center;
 }
 
@@ -42,7 +42,8 @@
   position: relative;
 }
 
-.post .post__subtitle, .post .post__text {
+.post .post__subtitle,
+.post .post__text {
   margin-left: 1.5rem;
 }
 
@@ -55,7 +56,8 @@
   content: url(img/icon/plus.svg);
 }
 
-.subtitle_minus::before, .subtitle_plus::before {
+.subtitle_minus::before,
+.subtitle_plus::before {
   position: absolute;
   left: -2rem;
 }
@@ -67,6 +69,14 @@
 .step__item {
   position: relative;
   max-width: 285px;
+  margin: 0 1rem;
+}
+
+.step__item .text span {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gray900);
+  line-height: 30px;
 }
 
 .number {
@@ -96,8 +106,231 @@
 .benefits {
   background: var(--gray900);
   text-align: center;
+  height: 580px;
+  position: relative;
+}
+
+.benefits__title,
+.benefits__text,
+.benefits__item h3,
+.benefits__item p {
+  color: white;
+}
+
+.benefits__title {
+  margin-top: 3rem;
+}
+
+.benefits__text {
+  margin: 2rem;
 }
 
 .benefits__items {
+  margin: 3rem 0;
   display: flex;
+  justify-content: space-around;
+}
+
+.benefits__item {
+  max-width: 275px;
+}
+
+.benefits__item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 2rem 0 1rem;
+}
+
+.benefits__btn {
+  position: absolute;
+  left: 42%;
+  bottom: -4%;
+}
+
+
+.project__header {
+  max-width: 1250px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.project__title {
+  margin-right: 40%;
+}
+
+.button__list--hover:hover {
+  background: var(--orange);
+  border-radius: 50%;
+}
+
+.button__list--hover:hover .arrow__list {
+  fill: white;
+}
+
+.container__project {
+  max-width: 1250px;
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 0;
+}
+
+.card__project {
+  position: relative;
+  max-width: 20vw;
+  max-height: 440px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.project__img {
+  width: 21vw;
+  height: 440px;
+  z-index: -10;
+}
+
+.link__project {
+  text-align: center;
+  background: white;
+  z-index: 10;
+  position: absolute;
+  bottom: -45px;
+  width: 100%;
+}
+
+.project__text {
+  margin: 5px 0;
+}
+
+.btn__project {
+  padding: 12px 18px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 44px;
+  background: transparent;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+.link__project:hover {
+  bottom: 0;
+}
+
+.portfolio__link {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__subtitle {
+  width: 300px;
+  margin-left: 25%;
+}
+
+.section__pricing {
+  background: var(--gray300);
+  text-align: center;
+  position: relative;
+}
+
+.img__pricing--background {
+  max-width: 1066px;
+  max-height: 860px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pricing__title {
+  margin-top: 3rem;
+}
+
+.pricing__text {
+  margin: 2rem;
+}
+
+.pricing-table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+tr th,
+tr td {
+  padding: 1rem;
+}
+
+tr th:nth-child(1),
+tr td:nth-child(1) {
+  text-align: start;
+}
+
+.pricing-table .no-child {
+  text-align: center;
+}
+
+thead,
+tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+.table__btn {
+  padding: 1rem 2rem;
+  border: 1px solid var(--orange);
+  background: transparent;
+  color: var(--orange);
+}
+
+.section--supported {
+  background: var(--gray300);
+  margin-top: 3rem;
+  padding: 10rem 345px;
+  text-align: center;
+  position: relative;
+}
+
+.section__items {
+  display: flex;
+  margin: 4rem 0 10rem;
+  justify-content: space-between;
+}
+
+.reviews {
+  max-width: 550px;
+  text-align: start;
+}
+
+.item--profile {
+  margin-top: 3rem;
+}
+
+.reviews__text {
+  margin: 1rem 0;
+}
+
+.reviwes__swipe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text span {
+  font-weight: 700;
+  color: var(--gray900);
+  font-size: 16px;
+  line-height: 25.6px;
+}
+
+.reviews__button {
+  background: transparent;
+  margin: 2rem 5px 0;
+}
+
+.reviwes__img {
+  max-width: 495px;
+  max-height: 550px;
+  position: absolute;
+  bottom: -5%;
+  right: 345px;
 }

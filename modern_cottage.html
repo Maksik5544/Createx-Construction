@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="icon" href="img/icon/Vector-X.svg">
+  <link rel="stylesheet" href="general_style.css">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="modern_cottage_style_header.css">
   <link rel="stylesheet" href="main_design.css">
-  <link rel="stylesheet" href="work_style.css">
   <link rel="stylesheet" href="footer.css">
   <title>Modern Cottage</title>
 </head>
@@ -19,34 +19,34 @@
 <body>
   <header class="header">
     <nav class="menu header__menu">
-      <a href="homepage.html" id="logo"><img class="logo header__logo" src="img/logo/logo.png" alt="logo"></a>
-      <ul class="list header__list">
-        <li class="items header__items">
-          <a href="#" class="link header__link">About Us</a>
+      <a href="homepage.html"><img class="logo header__logo" id="logo" src="img/logo/logo.png" alt="logo"></a>
+      <ul class="list menu__list">
+        <li class="item menu__item">
+          <a href="about_us.html" class="link item__link">About Us</a>
         </li>
-        <li class="items header__items">
-          <a href="services.html" class="link header__link link--active">Services</a>
+        <li class="item menu__item">
+          <a href="services.html" class="link item__link">Services</a>
         </li>
-        <li class="items header__items">
-          <a href="work.html" class="link header__link">Work</a>
+        <li class="item menu__item">
+          <a href="work.html" class="link item__link --active">Work</a>
         </li>
-        <li class="items header__items">
-          <a href="#" class="link header__link">News</a>
+        <li class="item menu__item">
+          <a href="#" class="link item__link">News</a>
         </li>
-        <li class="items header__items">
-          <a href="#" class="link header__link">Contacts</a>
+        <li class="item menu__item">
+          <a href="#" class="link item__link">Contacts</a>
         </li>
       </ul>
 
-      <ul class="list header__list">
-        <li class="contact header__contact">
+      <ul class="list menu__list">
+        <li class="item item__contact">
           <img src="img/icon/phone.svg" alt="tel">
           <a href="tel:+4055550128">
             <span>Call us</span> <br>
             (405) 555-0128
           </a>
         </li>
-        <li class="contact header__contact">
+        <li class="item item__contact">
           <img src="img/icon/Chat.svg" alt="Chat">
           <a href="mailto:hello@createx.com">
             <span>Talk to us</span> <br>
@@ -90,6 +90,83 @@
     </section>
     <img class="header__img-bg" src="img/modern_cottage/bg-image.png" alt="img_header">
   </header>
+
+  <main class="main">
+    <section class="section__constructive-decision">
+      <img class="img__constructive-decision" src="img/modern_cottage/Constructive decisions.jpg" alt="img">
+      <article class="container__constructive-decision">
+        <h2 class="title">Constructive decisions</h2>
+        <ul class="list list__constructive-decision">
+          <li class="item item__constructive-decision">Vitae ultrices ornare eu sed in est quisque duis id.</li>
+          <li class="item item__constructive-decision">A fermentum in morbi pretium aliquam adipiscing donec tempus.
+          </li>
+          <li class="item item__constructive-decision">Mauris odio pellentesque commodo, diam.</li>
+          <li class="item item__constructive-decision">Fermentum vestibulum est fermentum, egestas gravida scelerisque
+            quis.</li>
+          <li class="item item__constructive-decision">At pharetra libero blandit risus, fringilla sed commodo diam.
+          </li>
+          <li class="item item__constructive-decision">Integer ultricies viverra ut enim viverra ut.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="main__section section__project">
+      <article class="project__header">
+        <h2 class="title project__title">Related projects</h2>
+
+        <div class="block__buttons">
+          <button class="button__list button__list--hover" type="button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="arrow__list" fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.20711 17.2071C8.81658 17.5976 8.18342 17.5976 7.79289 17.2071L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929L7.79289 6.79289C8.18342 6.40237 8.81658 6.40237 9.20711 6.79289C9.59763 7.18342 9.59763 7.81658 9.20711 8.20711L6.41421 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L6.41421 13L9.20711 15.7929C9.59763 16.1834 9.59763 16.8166 9.20711 17.2071Z"
+                fill="#424551" />
+            </svg>
+          </button>
+          <button class="button__list button__list--hover" type="button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="arrow__list" fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.7929 6.79289C15.1834 6.40237 15.8166 6.40237 16.2071 6.79289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L16.2071 17.2071C15.8166 17.5976 15.1834 17.5976 14.7929 17.2071C14.4024 16.8166 14.4024 16.1834 14.7929 15.7929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L14.7929 8.20711C14.4024 7.81658 14.4024 7.18342 14.7929 6.79289Z"
+                fill="#424551" />
+            </svg>
+          </button>
+        </div>
+      </article>
+      <div class="container__project">
+        <div class="card__project">
+          <img class="project__img" src="img/work/Luxury Beach House.png" alt="scandinavian">
+          <article class="link__project">
+            <h3>Luxury Beach House</h3>
+            <p class="text project__text text--l">Private houses</p>
+            <a href="modern_cottage.html" class=" btn btn__project">View Project</a>
+          </article>
+        </div>
+
+        <div class="card__project">
+          <img class="project__img" src="img/work/Brown and Gray Painted House.png" alt="scandinavian">
+          <article class="link__project">
+            <h3>Brown and Gray Painted House</h3>
+            <p class="text project__text text--l">Private houses</p>
+            <a href="modern_cottage.html" class=" btn btn__project">View Project</a>
+          </article>
+        </div>
+
+        <div class="card__project">
+          <img class="project__img" src="img/work/Scandinavian Style Interior.png" alt="scandinavian">
+          <article class="link__project">
+            <h3>Scandinavian Style Interior</h3>
+            <p class="text project__text text--l">Private houses</p>
+            <a href="modern_cottage.html" class=" btn btn__project">View Project</a>
+          </article>
+        </div>
+      </div>
+
+      <div class="portfolio__link">
+        <h3 class="subtitle portfolio__subtitle">Explore all our works</h3>
+        <a href="#portfolio.html" class="btn">View portfolio</a>
+      </div>
+
+    </section>
+  </main>
 </body>
 
 </html>

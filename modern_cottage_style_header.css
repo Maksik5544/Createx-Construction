@@ -33,3 +33,31 @@
     color: var(--gray900);
     margin: 0 1rem;
 }
+
+.section__constructive-decision {
+    height: 570px;
+    background: var(--gray300);
+    position: relative;
+}
+
+.img__constructive-decision {
+    max-width: 490px;
+    max-height: 550px;
+    position: absolute;
+    left: 8%;
+    bottom: -3%;
+}
+
+.container__constructive-decision {
+    margin-left: 50%;
+    align-content: center;
+}
+
+.list__constructive-decision {
+    margin-top: 2rem;
+}
+
+.item__constructive-decision {
+    margin: 1rem 0;
+    list-style-image: url(img/icon/check.svg);
+}

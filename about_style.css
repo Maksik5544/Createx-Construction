@@ -1,0 +1,77 @@
+.main__header {
+    padding-top: 6rem;
+}
+
+.main__header_list {
+    justify-content: space-between;
+}
+
+.main__header_item {
+    width: 240px;
+    height: 178px;
+    text-align: center;
+    align-content: center;
+}
+
+.main__header_item h3 {
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    letter-spacing: 0%;
+}
+
+.main__header_item .text--l {
+    line-height: 150%;
+}
+
+.img__direct {
+    width: 525px;
+    height: 580px;
+}
+
+.section__direct {
+    position: relative;
+    margin-top: 15rem;
+}
+
+.direct__post {
+    box-sizing: border-box;
+    padding: 2rem 9rem;
+    width: 735px;
+    height: 570px;
+    position: absolute;
+    top: -15%;
+    right: 0;
+    background: white;
+    box-shadow: 1px 5px 22px 1px var(--gray400);
+}
+
+.text__direct {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    color: var(--gray900);
+    margin: 2rem 0;
+}
+
+.direct__post .text--l {
+    margin-top: 5rem;
+}
+
+.text__direct_paragraph1::before,
+.text__direct_paragraph2::after {
+    position: absolute;
+}
+
+.text__direct_paragraph1::before {
+    content: url(img/icon/kawichki.svg);
+    left: 15%;
+}
+
+.text__direct_paragraph2::after {
+    content: url(img/icon/podpis.svg);
+    right: 25%;
+    bottom: 11%;
+}
+

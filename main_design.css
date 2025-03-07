@@ -5,7 +5,7 @@
   line-height: 42px;
 }
 
-.main__section {
+.main__header {
   padding: 2rem 16vw;
   align-items: center;
 }
@@ -103,7 +103,7 @@
   color: var(--gray400);
 }
 
-.benefits {
+.section__benefits {
   background: var(--gray900);
   text-align: center;
   height: 580px;
@@ -144,87 +144,9 @@
 
 .benefits__btn {
   position: absolute;
-  left: 42%;
+  left: 44%;
   bottom: -4%;
-}
-
-
-.project__header {
-  max-width: 1250px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
-.project__title {
-  margin-right: 40%;
-}
-
-.button__list--hover:hover {
-  background: var(--orange);
-  border-radius: 50%;
-}
-
-.button__list--hover:hover .arrow__list {
-  fill: white;
-}
-
-.container__project {
-  max-width: 1250px;
-  display: flex;
-  justify-content: space-between;
-  margin: 5rem 0;
-}
-
-.card__project {
-  position: relative;
-  max-width: 20vw;
-  max-height: 440px;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.project__img {
-  width: 21vw;
-  height: 440px;
-  z-index: -10;
-}
-
-.link__project {
-  text-align: center;
-  background: white;
-  z-index: 10;
-  position: absolute;
-  bottom: -45px;
-  width: 100%;
-}
-
-.project__text {
-  margin: 5px 0;
-}
-
-.btn__project {
-  padding: 12px 18px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 44px;
-  background: transparent;
-  color: var(--orange);
-  border: 1px solid var(--orange);
-}
-
-.link__project:hover {
-  bottom: 0;
-}
-
-.portfolio__link {
-  display: flex;
-  align-items: center;
-}
-
-.portfolio__subtitle {
-  width: 300px;
-  margin-left: 25%;
+  width: 310px;
 }
 
 .section__pricing {
@@ -252,8 +174,7 @@
 .pricing-table {
   table-layout: fixed;
   border-collapse: collapse;
-  max-width: 1230px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 tr th,
@@ -282,6 +203,10 @@ tbody tr:nth-child(even) {
   color: var(--orange);
 }
 
+.partners__title {
+  margin-top: 6rem;
+}
+
 .section--supported {
   background: var(--gray300);
   margin-top: 3rem;
@@ -290,47 +215,7 @@ tbody tr:nth-child(even) {
   position: relative;
 }
 
-.section__items {
-  display: flex;
-  margin: 4rem 0 10rem;
+.partners__list {
+  margin: 4rem 0;
   justify-content: space-between;
-}
-
-.reviews {
-  max-width: 550px;
-  text-align: start;
-}
-
-.item--profile {
-  margin-top: 3rem;
-}
-
-.reviews__text {
-  margin: 1rem 0;
-}
-
-.reviwes__swipe {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.text span {
-  font-weight: 700;
-  color: var(--gray900);
-  font-size: 16px;
-  line-height: 25.6px;
-}
-
-.reviews__button {
-  background: transparent;
-  margin: 2rem 5px 0;
-}
-
-.reviwes__img {
-  max-width: 495px;
-  max-height: 550px;
-  position: absolute;
-  bottom: -5%;
-  right: 345px;
 }

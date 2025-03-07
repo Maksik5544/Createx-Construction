@@ -4,33 +4,33 @@
     background: white;
 }
 
-.main__section {
+.card__section {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 6rem;
     margin: 2rem 0;
 }
 
-.section__image {
+.card__image {
     width: 40vw;
-    max-height: 20vwpx;
 }
 
-.section__content {
+.card__content {
     width: 30vw;
 }
 
-.section__title {
+.card__title {
     font-size: 32px;
     line-height: 48px;
 }
 
-.section__text {
+.card__text {
     max-width: 470px;
     margin: 2rem 0;
 }
 
-.section__button {
+.card__button {
     padding: 1rem 2rem;
     border: 1px solid var(--orange);
     background: transparent;

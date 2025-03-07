@@ -3,7 +3,6 @@
 }
 
 .block__items {
-    display: flex;
     position: absolute;
     left: 15%;
     top: -12%;
@@ -14,6 +13,7 @@
     height: 154px;
     margin: 0 1.5rem;
     background: white;
+    border-radius: 5px;
     align-content: center;
     text-align: center;
 }
@@ -32,16 +32,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-
-.btn__project {
-    padding: 12px 18px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 44px;
-    background: transparent;
-    color: var(--orange);
-    border: 1px solid var(--orange);
-  }
 
 .section__reviews {
     align-content: center;

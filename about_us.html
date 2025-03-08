@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="icon" href="img/icon/Vector-X.svg">
-  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="general_style.css">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="about_style.css">
   <link rel="stylesheet" href="footer.css">
@@ -114,11 +114,11 @@
       </section>
     </header>
 
-    <section class="section section_gray">
+    <section class="section section__values-history">
       <div class="values__container">
         <h2 class="title values__title">Our core values</h2>
         <p class="text values__text">Our mission is to set the highest standards for construction sphere.</p>
-        <ul class="list values__items">
+        <ul class="list values__list">
           <li class="item values__item">
             <img class="item__img" src="img/icon/ic-like.svg" alt="like">
             <h3>Quality</h3>
@@ -151,21 +151,8 @@
       </div>
 
       <div class="container__history">
-        <article class="data__history">
+        <article class="header-history">
           <h2 class="title">Our history</h2>
-          <ul class="list list__history">
-            <li class="item item__history --active">Present</li>
-            <li class="item item__history">March 2019</li>
-            <li class="item item__history">November 2018</li>
-            <li class="item item__history">July 2015</li>
-            <li class="item item__history">August 2010</li>
-            <li class="item item__history">February 2007</li>
-            <li class="item item__history">May 2004</li>
-            <li class="item item__history">October 2001</li>
-            <li class="item item__history">June 2000</li>
-          </ul>
-        </article>
-        <article class="article__blog">
           <div class="block__buttons">
             <button class="button__list button__list--hover" type="button">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -182,19 +169,40 @@
               </svg>
             </button>
           </div>
-          <img class="img__blog" src="img/about_us/crane.png" alt="">
-          <p>
-            Bcelerisque dapibus pharetra nibh semper iaculis duis viverra porttitor in. Eu nec vitae, malesuada vitae
-            egestas
-            integer et morbi. Maecenas sed quis diam posuere malesuada magnis. Bcelerisque dapibus. Eu nec vitae.
-          </p>
+        </article>
+        <article class="data__history">
+          <ul class="list__history">
+            <li class="item item__history --active">Present</li>
+            <li class="item item__history">March 2019</li>
+            <li class="item item__history">November 2018</li>
+            <li class="item item__history">July 2015</li>
+            <li class="item item__history">August 2010</li>
+            <li class="item item__history">February 2007</li>
+            <li class="item item__history">May 2004</li>
+            <li class="item item__history">October 2001</li>
+            <li class="item item__history">June 2000</li>
+          </ul>
+
+          <article class="article__history-blog">
+            <figure class="history-blog">
+              <img class="img__history-blog" src="img/about_us/crane.png" alt="">
+              <figcaption>
+                <p>
+                  Bcelerisque dapibus pharetra nibh semper iaculis duis viverra porttitor in. Eu nec vitae, malesuada
+                  vitae
+                  egestas
+                  integer et morbi. Maecenas sed quis diam posuere malesuada magnis. Bcelerisque dapibus. Eu nec vitae.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
         </article>
       </div>
     </section>
 
     <section class="section partners-team">
-      <div class="container__partners"></div>
       <h2 class="title">Our partners</h2>
+      <p class="text partners-team__text">We are supported by 12+ industry bodies and media partners</p>
       <ul class="list list__partners">
         <li class="item item-partners">
           <img src="img/logo/In_depth_consulting.png" alt="logo">
@@ -234,10 +242,10 @@
           <img src="img/logo/united_strategy.png" alt="logo">
         </li>
       </ul>
-      <h2 class="title">Our team</h2>
+      <h2 class="title team__title">Our team</h2>
       <p>People are at heart of Createx Construction Bureau</p>
       <div class="team__container">
-        <div class="member__team  team_avatar1">
+        <div class="member__team">
           <img src="img/team/Courtney Alexander.jpg" alt="">
           <article class="networks__team">
             <img src="img/icon/Linked-In.svg" alt="" class="networks__link">
@@ -250,7 +258,8 @@
           </article>
         </div>
 
-        <div class="member__team team_avatar2">
+        <div class="member__team">
+          <img src="img/team/Calvin Fox.png" alt="">
           <article class="networks__team">
             <img src="img/icon/Linked-In.svg" alt="" class="networks__link">
             <img src="img/icon/Tvitter.svg" alt="" class="networks__link">
@@ -262,7 +271,8 @@
           </article>
         </div>
 
-        <div class="member__team team_avatar3">
+        <div class="member__team">
+          <img src="img/team/Johnny Lane.png" alt="">
           <article class="networks__team">
             <img src="img/icon/Linked-In.svg" alt="" class="networks__link">
             <img src="img/icon/Tvitter.svg" alt="" class="networks__link">
@@ -274,7 +284,8 @@
           </article>
         </div>
 
-        <div class="member__team team_avatar4">
+        <div class="member__team">
+          <img src="img/team/Diane Mccoy.png" alt="">
           <article class="networks__team">
             <img src="img/icon/Linked-In.svg" alt="" class="networks__link">
             <img src="img/icon/Tvitter.svg" alt="" class="networks__link">
@@ -286,7 +297,8 @@
           </article>
         </div>
 
-        <div class="member__team team_avatar5">
+        <div class="member__team">
+          <img src="img/team/Judith Warren.png" alt="">
           <article class="networks__team">
             <img src="img/icon/Linked-In.svg" alt="" class="networks__link">
             <img src="img/icon/Tvitter.svg" alt="" class="networks__link">
@@ -298,7 +310,8 @@
           </article>
         </div>
 
-        <div class="member__team team_avatar6">
+        <div class="member__team">
+          <img src="img/team/Floyd Simmmons.png" alt="">
           <article class="networks__team">
             <img src="img/icon/Linked-In.svg" alt="" class="networks__link">
             <img src="img/icon/Tvitter.svg" alt="" class="networks__link">
@@ -310,7 +323,8 @@
           </article>
         </div>
 
-        <div class="member__team team_avatar7">
+        <div class="member__team">
+          <img src="img/team/Serenity Edwards.png" alt="">
           <article class="networks__team">
             <img src="img/icon/Linked-In.svg" alt="" class="networks__link">
             <img src="img/icon/Tvitter.svg" alt="" class="networks__link">
@@ -322,7 +336,8 @@
           </article>
         </div>
 
-        <div class="member__team team_avatar8">
+        <div class="member__team">
+          <img src="img/team/Shawn Edwards.png" alt="">
           <article class="networks__team">
             <img src="img/icon/Linked-In.svg" alt="" class="networks__link">
             <img src="img/icon/Tvitter.svg" alt="" class="networks__link">
@@ -334,15 +349,15 @@
           </article>
         </div>
       </div>
-      <p>
+      <p class="text available__text">
         Become a part of the best team in the construction market of the USA.
-        <a href="#">Available Positions</a>
+        <a class="available__link" href="#">Available Positions</a>
       </p>
     </section>
 
-    <section class="map">
-      <h2 class="title">We work worldwide</h2>
-      <img src="img/about_us/map.svg" alt="map">
+    <section class="section map">
+      <h2 class="title map__title">We work worldwide</h2>
+      <img class="map__img" src="img/about_us/map.svg" alt="map">
     </section>
   </main>
 

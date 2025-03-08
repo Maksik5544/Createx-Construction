@@ -76,6 +76,7 @@ p {
   box-sizing: border-box;
 }
 
+
 /*блок project*/
 
 .project__header {
@@ -147,7 +148,6 @@ p {
   border: 1px solid var(--orange);
 }
 
-
 .link__project:hover {
   bottom: 0;
 }
@@ -161,6 +161,7 @@ p {
   display: flex;
 }
 
+
 /*партнеры*/
 .section__partners {
   background: var(--gray200);
@@ -172,6 +173,7 @@ p {
   margin: 4rem 0;
   justify-content: space-between;
 }
+
 
 /*reviews*/
 
@@ -203,7 +205,6 @@ p {
   line-height: 25.6px;
 }
 
-
 .reviews__button {
   background: transparent;
   margin: 2rem 5px 0;
@@ -215,4 +216,24 @@ p {
   position: absolute;
   right: -120%;
   top: 3%;
+}
+
+
+/* Values*/
+
+.values__container {
+  margin-bottom: 8rem;
+  box-sizing: border-box;
+}
+
+.values__text {
+  margin: 2rem 0 4rem;
+}
+
+.values__list {
+  justify-content: space-evenly;
+}
+
+.values__item {
+  max-width: 285px;
 }

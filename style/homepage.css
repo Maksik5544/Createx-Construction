@@ -16,6 +16,10 @@
   max-height: 900px;
 }
 
+.homepage-values {
+  margin-bottom: 10rem;
+}
+
 .form-quest {
   box-sizing: border-box;
   background: white;
@@ -24,7 +28,7 @@
   width: 1230px;
   height: 230px;
   padding: 0 2rem;
-  bottom: -23.5%;
+  bottom: -18.5%;
   left: 18%;
   text-align: center;
   z-index: 20;
@@ -64,7 +68,7 @@
 }
 
 
-.services__section {
+.services {
   position: relative;
   align-content: center;
   text-align: center;
@@ -79,7 +83,6 @@
 }
 
 .list__services {
-  flex-wrap: wrap;
   justify-content: space-evenly;
   cursor: pointer;
 }
@@ -104,7 +107,7 @@
 }
 
 .item__services:hover {
-  background: url(img/service/image_section_Interior_design.jpg) center/cover, no-repeat;
+  background: url(../img/service/image_section_Interior_design.jpg) center/cover, no-repeat;
   border-radius: 5px;
 }
 
@@ -129,7 +132,6 @@
   max-width: 207px;
 }
 
-
 .bg__image-services {
   position: absolute;
   background: var(--gray300);
@@ -138,10 +140,7 @@
   z-index: -5;
 }
 
-
-
-
-.facts-news__section {
+.facts-news {
   padding: 10rem 0;
 }
 
@@ -216,48 +215,7 @@
   text-align: center;
 }
 
-.news__contaier {
-  margin: 2rem auto;
-  max-width: 1280px;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  column-gap: 3rem;
-  row-gap: 5rem;
-}
 
-
-.img__news {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.news__info {
-  background: white;
-  text-align: start;
-}
-
-.news__link {
-  font-family: Ubuntu;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  color: var(--gray900);
-  text-decoration: none;
-}
-
-.news__link:hover {
-  color: var(--orange);
-}
-
-.news__item {
-  margin: 5px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--gray700);
-}
 
 .content--1 {
   grid-row: 1/3;
@@ -274,9 +232,7 @@
 .content--3 {
   grid-row: 2/3;
   grid-column: 2/3;
-
 }
-
 
 .news-posts {
   display: flex;

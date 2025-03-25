@@ -1,0 +1,46 @@
+.--active {
+  color: var(--orange);
+}
+
+.news__contaier_homepage {
+  margin: 2rem auto;
+  max-width: 1280px;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 3rem;
+  row-gap: 5rem;
+}
+
+.categories_news {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  row-gap: 5rem;
+}
+
+.img__news_size {
+  max-width: 600px;
+  max-height: 300px;
+}
+
+.reviwes__img_work {
+  bottom: 11%;
+}
+
+.gray_section {
+  background: var(--gray200);
+}
+
+.values_benefits {
+  background: var(--gray900);
+  height: 580px;
+  position: relative;
+}
+
+.values__title_benefits-whit,
+.values__text_benefits-whit,
+.values__item-title_benefits-whit,
+.values__item-text_benefits-whit {
+  color: white;
+}
+
+

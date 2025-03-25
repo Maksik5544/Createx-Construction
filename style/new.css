@@ -1,0 +1,47 @@
+.categories {
+  text-align: center;
+}
+
+.categories__list {
+  margin: 5rem 0;
+  justify-content: space-around
+}
+
+.categories__item {
+  cursor: pointer;
+  align-content: center;
+  box-sizing: border-box;
+  width: 205px;
+  height: 46px;
+}
+
+.item__link_categories {
+  font-family: Ubuntu;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--gray600);
+}
+
+.categories__item:hover {
+  border: 1px solid var(--orange);
+  color: var(--orange);
+}
+
+.categories__item:hover .item__link_categories {
+  color: var(--orange);
+}
+
+.numbers {
+  margin: 4rem 0;
+  justify-content: center;
+}
+
+.item__numbers {
+  margin: 0 1rem;
+}
+
+.item__numbers:hover .link__numbers {
+  color: var(--orange);
+  fill: var(--orange);
+}

@@ -1,23 +1,26 @@
 .main {
-    padding: 2rem 9vw;
+    padding: 0 21.5rem;
     position: relative;
     background: white;
 }
 
-.card__section {
+.card {
+    width: 1230px;
+    height: 420px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 6rem;
-    margin: 2rem 0;
+    margin: 7rem 0;
 }
 
 .card__image {
-    width: 40vw;
+    width: 575px;
+    height: 420px;
 }
 
 .card__content {
-    width: 30vw;
+    width: 575px;
 }
 
 .card__title {
@@ -27,7 +30,7 @@
 
 .card__text {
     max-width: 470px;
-    margin: 2rem 0;
+    margin: 3rem 0;
 }
 
 .card__button {

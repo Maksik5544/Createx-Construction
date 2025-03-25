@@ -105,10 +105,6 @@
   list-style: disc;
 }
 
-.list__history .--active {
-  color: var(--orange);
-}
-
 .history-blog,
 .img__history-blog {
   max-width: 810px;
@@ -121,15 +117,6 @@
 
 .partners-team__text {
   margin: 2rem 0;
-}
-
-.list__partners {
-  flex-wrap: wrap;
-  gap: 1rem 5rem;
-}
-
-.item-partners {
-  margin: auto;
 }
 
 .team__title {

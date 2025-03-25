@@ -1,19 +1,6 @@
-.subtitle {
-  font-family: Ubuntu;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 42px;
-}
-
-.main__header {
-  padding: 2rem 16vw;
-  align-items: center;
-}
-
-.section__offer {
+.offer {
   display: flex;
   gap: 5rem;
-  margin-top: 5rem;
   margin-bottom: 8rem;
 }
 
@@ -35,7 +22,6 @@
 
 .post__text {
   margin: 2rem 0;
-
 }
 
 .post__subtitle {
@@ -48,12 +34,12 @@
 }
 
 .subtitle_minus::before {
-  content: url(img/icon/minus.svg);
+  content: url(../img/icon/minus.svg);
   top: -8px;
 }
 
 .subtitle_plus::before {
-  content: url(img/icon/plus.svg);
+  content: url(../img/icon/plus.svg);
 }
 
 .subtitle_minus::before,
@@ -103,45 +89,6 @@
   color: var(--gray400);
 }
 
-.section__benefits {
-  background: var(--gray900);
-  text-align: center;
-  height: 580px;
-  position: relative;
-}
-
-.benefits__title,
-.benefits__text,
-.benefits__item h3,
-.benefits__item p {
-  color: white;
-}
-
-.benefits__title {
-  margin-top: 3rem;
-}
-
-.benefits__text {
-  margin: 2rem;
-}
-
-.benefits__items {
-  margin: 3rem 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-.benefits__item {
-  max-width: 275px;
-}
-
-.benefits__item h3 {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 30px;
-  margin: 2rem 0 1rem;
-}
-
 .benefits__btn {
   position: absolute;
   left: 44%;
@@ -163,15 +110,12 @@
   left: 0;
 }
 
-.pricing__title {
-  margin-top: 3rem;
-}
-
 .pricing__text {
   margin: 2rem;
 }
 
 .pricing-table {
+  margin-bottom: 6rem;
   table-layout: fixed;
   border-collapse: collapse;
   width: 100%;
@@ -203,19 +147,10 @@ tbody tr:nth-child(even) {
   color: var(--orange);
 }
 
-.partners__title {
-  margin-top: 6rem;
-}
-
 .section--supported {
   background: var(--gray300);
   margin-top: 3rem;
   padding: 10rem 345px;
   text-align: center;
   position: relative;
-}
-
-.partners__list {
-  margin: 4rem 0;
-  justify-content: space-between;
 }

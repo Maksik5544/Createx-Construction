@@ -5,19 +5,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <link rel="icon" href="img/icon/Vector-X.svg">
-  <link rel="stylesheet" href="general_style.css">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="homepage_header.css">
-  <link rel="stylesheet" href="homepage.css">
-  <link rel="stylesheet" href="footer.css">
+  <link rel="icon" href="../img/icon/Vector-X.svg">
+  <link rel="stylesheet" href="../style/reset.css">
+  <link rel="stylesheet" href="../style/general_style.css">
+  <link rel="stylesheet" href="../style/header.css">
+  <link rel="stylesheet" href="../style/homepage_header.css">
+  <link rel="stylesheet" href="../style/homepage.css">
+  <link rel="stylesheet" href="../style/footer.css">
+  <link rel="stylesheet" href="../style/modification.css">
   <title>Homepage</title>
 </head>
 
 <body>
   <header class="header">
-    <nav class="menu header__menu">
-      <a href="homepage.html"><img class="logo header__logo" id="logo" src="img/logo/logo.png" alt="logo"></a>
+    <nav class="menu homepage-menu">
+      <a href="homepage.html"><img class="logo header__logo" id="logo" src="../img/logo/logo.png" alt="logo"></a>
       <ul class="list menu__list">
         <li class="item menu__item">
           <a href="about_us.html" class="link item__link">About Us</a>
@@ -29,31 +31,30 @@
           <a href="work.html" class="link item__link">Work</a>
         </li>
         <li class="item menu__item">
-          <a href="#" class="link item__link">News</a>
+          <a href="news.html" class="link item__link">News</a>
         </li>
         <li class="item menu__item">
-          <a href="#" class="link item__link">Contacts</a>
+          <a href="contacts.html" class="link item__link">Contacts</a>
         </li>
       </ul>
 
       <ul class="list menu__list">
-        <li class="item item__contact">
-          <img src="img/icon/phone.svg" alt="tel">
-          <a href="tel:+4055550128">
+        <li class="item menu__item item_contact">
+          <img src="../img/icon/phone.svg" alt="tel">
+          <a class="link item__link link_contact" href="tel:+4055550128">
             <span>Call us</span> <br>
             (405) 555-0128
           </a>
         </li>
-        <li class="item item__contact">
-          <img src="img/icon/Chat.svg" alt="Chat">
-          <a href="mailto:hello@createx.com">
+        <li class="item menu__item item_contact">
+          <img src="../img/icon/Chat.svg" alt="Chat">
+          <a class="link item__link link_contact" href="mailto:hello@createx.com">
             <span>Talk to us</span> <br>
             hello@createx.com
           </a>
         </li>
       </ul>
     </nav>
-
     <section class="section content header__content">
       <h1 class="title title__content">CREATE<span>X</span> CONSTRUCTION</h1>
       <p class="text text__content">
@@ -84,17 +85,17 @@
         <p class="text construction-content__text">We are rightfully considered to be the best construction company in
           the USA.
         </p>
-        <img class="createx-video" src="img/Homepage/video.png" alt="video">
+        <img class="createx-video" src="../img/Homepage/video.png" alt="video">
       </section>
 
-      <div class="section values__container">
+      <div class="section values homepage-values">
         <h2 class="title values__title">Our core values</h2>
         <p class="text values__text">Our mission is to set the highest standards for construction sphere.</p>
         <ul class="list values__list">
           <li class="item values__item">
-            <img class="item__img" src="img/icon/ic-like.svg" alt="like">
-            <h3>Quality</h3>
-            <p>
+            <img class="item__img" src="../img/icon/ic-like.svg" alt="like">
+            <h3 class="values__item-title">Quality</h3>
+            <p class="values__item-text">
               Culpa nostrud commodo ea consequat
               aliquip reprehenderit. Veniam velit
               nostrud aliquip sunt.
@@ -102,9 +103,9 @@
           </li>
 
           <li class="item values__item">
-            <img class="item__img" src="img/icon/ic-hand.svg" alt="hand">
-            <h3>Safety</h3>
-            <p>
+            <img class="item__img" src="../img/icon/ic-hand.svg" alt="hand">
+            <h3 class="values__item-title">Safety</h3>
+            <p class="values__item-text">
               Anim reprehenderit sint voluptate
               exercitation adipisicing laborum
               adipisicing. Minim empor est ea.
@@ -112,9 +113,9 @@
           </li>
 
           <li class="item values__item">
-            <img class="item__img" src="img/icon/ic-slippers.svg" alt="slippers">
-            <h3>Comfort</h3>
-            <p>Sit veniam aute dolore adipisicing nulla
+            <img class="item__img" src="../img/icon/ic-slippers.svg" alt="slippers">
+            <h3 class="values__item-title">Comfort</h3>
+            <p class="values__item-text">Sit veniam aute dolore adipisicing nulla
               sit culpa. Minim mollit voluptate
               ullamco proident ea ad.
             </p>
@@ -128,15 +129,15 @@
           <ul class="list form__list">
             <li class="item form__item">
               <p class="text form__text text_l">Name</p>
-              <input type="name" name="name" placeholder="Your name">
+              <input class="form-input" type="name" name="name" placeholder="Your name">
             </li>
             <li class="item form__item">
               <p class="text form__text text_l">Phone</p>
-              <input type="tel" name="tel" placeholder="Your phone number">
+              <input class="form-input" type="tel" name="tel" placeholder="Your phone number">
             </li>
             <li class="item form__item item_message">
               <p class="text form__text text_l">Message</p>
-              <input type="text" name="text" placeholder="Your message">
+              <input class="form-input" type="text" name="text" placeholder="Your message">
             </li>
             <button class="button form-quest__button" tupe="button">Send</button>
           </ul>
@@ -144,7 +145,7 @@
       </div>
     </header>
 
-    <section class="section services__section">
+    <section class="section services">
       <h2 class="title">Our services</h2>
       <p class="text services__text">Createx Construction Bureau is a construction giant with a full range of
         construction services.</p>
@@ -214,10 +215,10 @@
         <h3 class="subtitle link-services__subtitle">Learn more about our services</h3>
         <a href="services.html" class="btn btn__services--link" type="button">View services</a>
       </div>
-      <img class="bg__image-services" src="img/Homepage/bg-image-Our services.png" alt="bg-image">
+      <img class="bg__image-services" src="../img/Homepage/bg-image-Our services.png" alt="bg-image">
     </section>
 
-    <section class="section section__project">
+    <section class="section project">
       <article class="project__header">
         <h2 class="title project__title">
           Browse our selected projects
@@ -240,9 +241,9 @@
           </button>
         </div>
       </article>
-      <div class="container__project">
+      <div class="wrappers-project">
         <div class="card__project">
-          <img class="project__img" src="img/Homepage/Red Finger Building.png" alt="tower ">
+          <img class="project__img" src="../img/Homepage/Red Finger Building.png" alt="tower ">
           <article class="link__project">
             <h3>Red Finger Building</h3>
             <p class="text project__text text--l">Business Centers</p>
@@ -251,7 +252,7 @@
         </div>
 
         <div class="card__project">
-          <img class="project__img" src="img/Homepage/Cubes Building.png " alt="tower">
+          <img class="project__img" src="../img/Homepage/Cubes Building.png " alt="tower">
           <article class="link__project">
             <h3>Cubes Building</h3>
             <p class="text project__text text--l">Business Centers</p>
@@ -260,7 +261,7 @@
         </div>
 
         <div class="card__project">
-          <img class="project__img" src="img/Homepage/The Pencil Building.png" alt="tower">
+          <img class="project__img" src="../img/Homepage/The Pencil Building.png" alt="tower">
           <article class="link__project">
             <h3>The Pencil Building</h3>
             <p class="text project__text text--l">Stores & Malls</p>
@@ -274,32 +275,32 @@
       </div>
     </section>
 
-    <section class="section section__partners">
+    <section class="section partners gray_section">
       <h2 class="title">Supported by 12+ partners</h2>
       <ul class="list partners__list">
         <li class="item partners__item">
-          <img src="img/logo/In_depth_consulting.png" alt="">
+          <img src="../img/logo/In_depth_consulting.png" alt="">
         </li>
         <li class="item partners__item">
-          <img src="img/logo/higher_fit.png" alt="">
+          <img src="../img/logo/higher_fit.png" alt="">
         </li>
         <li class="item partners__item">
-          <img src="img/logo/sentinal_consulting.png" alt="">
+          <img src="../img/logo/sentinal_consulting.png" alt="">
         </li>
         <li class="item partners__item">
-          <img src="img/logo/happy_home.png" alt="">
+          <img src="../img/logo/happy_home.png" alt="">
         </li>
         <li class="item partners__item">
-          <img src="img/logo/ForSale.png" alt="">
+          <img src="../img/logo/ForSale.png" alt="">
         </li>
         <li class="item partners__item">
-          <img src="img/logo/sunset_realily.png" alt="">
+          <img src="../img/logo/sunset_realily.png" alt="">
         </li>
       </ul>
 
       <section class="reviews">
         <h2 class="title reviews__title">What our clients are saying</h2>
-        <img class="foto-profile" src="img/Homepage/profile-image.png" alt="profile">
+        <img class="foto-profile" src="../img/Homepage/profile-image.png" alt="profile">
         <p class="text reviews__text">
           Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim.
           Consectetur magna cillum consequat minim laboris cillum laboris voluptate minim
@@ -308,16 +309,16 @@
         <div class="reviwes__swipe">
           <p class="text text--l"><span>Shawn Edwards</span><br>Position, Company name</p>
           <div class="reviwes__buttons">
-            <button class="button__list" type="button"><img src="img/icon/arrow_Left.svg" alt=""></button>
-            <button class="button__list" type="button"><img src="img/icon/arrow_rights_black.svg" alt=""></button>
+            <button class="button__list" type="button"><img src="../img/icon/arrow_Left.svg" alt=""></button>
+            <button class="button__list" type="button"><img src="../img/icon/arrow_rights_black.svg" alt=""></button>
           </div>
         </div>
-        <img class="reviwes__img" src="img/Homepage/prorab.jpg" alt="img">
+        <img class="reviwes__img" src="../img/Homepage/prorab.jpg" alt="img">
       </section>
       
     </section>
 
-    <section class="section facts-news__section">
+    <section class="section facts-news">
       <div class="facts">
         <h2 class="title">Some facts and figures</h2>
         <ul class="list facts__progress">
@@ -330,17 +331,17 @@
 
       <section class="news">
         <h2 class="title">Recent news</h2>
-        <section class="news__contaier">
+        <section class="news__contaier news__contaier_homepage">
           <div class="news__content content--1">
-            <img class="img__news" src="img/Homepage/glass_rab.jpg" alt="img">
+            <img class="img__news img__news_content--1" src="../img/Homepage/glass_rab.jpg" alt="img">
             <article class="news__info">
-              <a class="." href="#">How to Build Climate Change-Resilient Infrastructure</a>
+              <a class="news__link" href="#">How to Build Climate Change-Resilient Infrastructure</a>
               <ul class="list news__list">
                 <li class="item news__item">Industry News</li>
                 <li class="item news__item">|</li>
                 <li class="item news__item">June 24, 2020</li>
                 <li class="item news__item">|</li>
-                <li class="item news__item"><img src="img/icon/Chat-gray.svg" alt="">4 comments</li>
+                <li class="item news__item"><img src="../img/icon/Chat-gray.svg" alt="">4 comments</li>
               </ul>
               <p>
                 Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit
@@ -350,7 +351,7 @@
           </div>
 
           <div class="news__content content--2">
-            <img class="img__news" src="img/Homepage/kaska.jpg" alt="img">
+            <img class="img__news" src="../img/Homepage/kaska.jpg" alt="img">
             <article class="news__info">
               <a class="news__link" href="#">How Construction Can Help Itself</a>
               <ul class="list news__list">
@@ -358,13 +359,13 @@
                 <li class="item news__item">|</li>
                 <li class="item news__item">June 12, 2020</li>
                 <li class="item news__item">|</li>
-                <li class="item news__item"><img src="img/icon/Chat-gray.svg" alt="">No comments</li>
+                <li class="item news__item"><img src="../img/icon/Chat-gray.svg" alt="">No comments</li>
               </ul>
             </article>
           </div>
 
           <div class="news__content content--3">
-            <img class="img__news" src="img/Homepage/shpatel.jpg" alt="img">
+            <img class="img__news" src="../img/Homepage/shpatel.jpg" alt="img">
             <article class="news__info">
               <a class="news__link" href="#">Types of Flooring Materials</a>
               <ul class="list news__list">
@@ -372,33 +373,33 @@
                 <li class="item news__item">|</li>
                 <li class="item news__item">December 1, 2019</li>
                 <li class="item news__item">|</li>
-                <li class="item news__item"><img src="img/icon/Chat-gray.svg" alt="">No comments</li>
+                <li class="item news__item"><img src="../img/icon/Chat-gray.svg" alt="">No comments</li>
               </ul>
             </article>
           </div>
         </section>
         <article class="news-posts">
           <h3 class="subtitle news-post__subtitle">Explore all our news posts</h3>
-          <a class="btn news__btn" href="#">View all news</a>
+          <a class="btn news__btn" href="news.html">View all news</a>
         </article>
       </section>
     </section>
   </main>
 
   <footer class="footer">
-    <section class="sections footer__sections sections--top">
-      <div class="footer__form">
+    <section class="sections footer__sections_top">
+      <div class="form-wrapper">
         <h2 class="title footer__form-title">A quick way to discuss details</h2>
         <form class="form" action="wtf.php">
           <p class="text form__text">Name*</p>
-          <input type="name" name="name" placeholder="Your name">
+          <input class="form-input footer__form-input" type="name" name="name" placeholder="Your name">
           <p class="text form__text">Phone*</p>
-          <input type="tel" name="tel" placeholder="Your phone number">
+          <input class="form-input footer__form-input" type="tel" name="tel" placeholder="Your phone number">
           <p class="text form__text">Email</p>
-          <input type="email" name="email" placeholder="Your working email">
+          <input class="form-input footer__form-input" type="email" name="email" placeholder="Your working email">
           <p class="text form__text">Message*</p>
-          <input type="text" name="text" placeholder="Your message">
-          <input type="checkbox" name="checkbox">
+          <input class="footer__form-input" type="text" name="text" placeholder="Your message">
+          <input class="form-input footer__form-input input_checkbox" type="checkbox" name="checkbox">
           I agree to recieve communications from Createx Construction Bureau.
           </input>
           <button class="button form__button" tupe="submit">Send request</button>
@@ -406,37 +407,37 @@
       </div>
     </section>
 
-    <section class="sections footer__sections sections--bot">
-      <article class="footer__socseti">
-        <img class="logo footer__logo" src="img/logo/white_logo.svg" alt="logo">
-        <ul class="list footer__list list--socseti">
-          <li class="items footer__items">
+    <section class="sections footer__sections_bot">
+      <article class="soc-networks">
+        <img class="logo footer__logo" src="../img/logo/white_logo.svg" alt="logo">
+        <ul class="list soc-networks__list">
+          <li class="items soc-networks__items">
             <a href="#" class="link footer__link">
-              <img src="img/icon/WhatsApp.svg" alt="WhatsApp">
+              <img src="../img/icon/WhatsApp.svg" alt="WhatsApp">
             </a>
           </li>
-          <li class="items footer__items">
+          <li class="items soc-networks__items">
             <a href="#" class="link footer__link">
-              <img src="img/icon/Telegram.svg" alt="Telegram">
+              <img src="../img/icon/Telegram.svg" alt="Telegram">
             </a>
           </li>
-          <li class="items footer__items">
+          <li class="items soc-networks__items">
             <a href="#" class="link footer__link">
-              <img src="img/icon/Facebook.svg" alt="Facebook">
+              <img src="../img/icon/Facebook.svg" alt="Facebook">
             </a>
           </li>
-          <li class="items footer__items">
+          <li class="items soc-networks__items">
             <a href="#" class="link footer__link">
-              <img src="img/icon/Tvitter.svg" alt="tvitter">
+              <img src="../img/icon/Tvitter.svg" alt="tvitter">
             </a>
           </li>
-          <li class="items footer__items">
+          <li class="items soc-networks__items">
             <a href="#" class="link footer__link">
-              <img src="img/icon/youtube.svg" alt="youtube">
+              <img src="../img/icon/youtube.svg" alt="youtube">
             </a>
           </li>
         </ul>
-        <p class="text footer__socseti-text">
+        <p class="text soc-networks__text">
           Createx Construction Bureau has been successfully operating in the USA
           construction market since 2000. We are proud to offer you quality
           construction and exemplary service. Our mission is to set the highest
@@ -444,76 +445,76 @@
         </p>
       </article>
 
-      <article class="footer__subscribe">
-        <h2 class="title footer__subscribe-title">Let's stay in touch</h2>
+      <article class="subscribe">
+        <h2 class="title subscribe__title">Let's stay in touch</h2>
         <form class="form" action="wtf.php">
-          <input class="form__input-subscribe" type="email" name="email" placeholder="Your email address">
-          <button class="button form__button button--subscribe" type="submit">subscribe</button>
+          <input class="input__subscribe" type="email" name="email" placeholder="Your email address">
+          <button class="button form__button button__subscribe" type="submit">subscribe</button>
         </form>
-        <p class="text footer__subscribe-text">
+        <p class="text subscribe__text">
           *Subscribe to our newsletter to receive communications and early updates from Createx
           Construction Bureau.
         </p>
       </article>
 
-      <article class="footer__address">
-        <ul class="footer__list">
-          <li class="items footer__items">
-            <a href="#" class="link footer__link link--bold">head office</a>
+      <article class="wrappers-address">
+        <ul class="list__address list_margin-top">
+          <li class="item address__item">
+            <a href="#" class="link address__link link_bold">head office</a>
           </li>
-          <li class="items footer__items items--contact">
-            <address><span></span>Address:</span> 8502 Preston Rd. Inglewood, New York</address>
+          <li class="item address__item">
+            <address class="link address__link"><span>Address:</span> 8502 Preston Rd. Inglewood, New York</address>
           </li>
-          <li class="items footer__items items--contact">
-            <a href="tel:+4055550128">
-              <span></span>Call:</span> (405) 555-0128
+          <li class="item address__item">
+            <a href="tel:+4055550128" class="link address__link">
+              <span>Call:</span> (405) 555-0128
             </a>
           </li>
-          <li class="items footer__items items--contact">
-            <a href="mailto:hello@createx.com">
-              <span></span>Email:</span> hello@createx.com
+          <li class="item address__item">
+            <a href="mailto:hello@createx.com" class="link address__link">
+              <span>Email:</span> hello@createx.com
             </a>
           </li>
         </ul>
 
-        <ul class="footer__list">
-          <li class="items footer__items">
-            <a href="#" class="link footer__link link--bold">who we are</a>
+        <ul class="menu__list list_margin-top">
+          <li class="item menu__item">
+            <a href="#" class="link footer__link link_bold">who we are</a>
           </li>
-          <li class="items footer__items">
+          <li class="item menu__item">
             <a href="#" class="link footer__link">About Us</a>
           </li>
-          <li class="items footer__items">
+          <li class="item menu__item">
             <a href="#" class="link footer__link">Available Positions</a>
           </li>
-          <li class="items footer__items">
+          <li class="item menu__item">
             <a href="#" class="link footer__link">Contacts</a>
           </li>
         </ul>
 
-        <ul class="footer__list">
-          <li class="items footer__items">
+        <ul class="menu__list list_margin-top">
+          <li class="item menu__item">
             <a href="#" class="link footer__link link--bold">our experience</a>
           </li>
-          <li class="items footer__items">
+          <li class="item menu__item">
             <a href="#" class="link footer__link">Services</a>
           </li>
-          <li class="items footer__items">
+          <li class="item menu__item">
             <a href="#" class="link footer__link">Work</a>
           </li>
-          <li class="items footer__items">
+          <li class="item menu__item">
             <a href="#" class="link footer__link">News</a>
           </li>
         </ul>
       </article>
 
 
-      <article class="section__copyright">
+      <article class="copyright">
         <p class="text">© All rights reserved. Made with</p>
-        <img src="img/icon/hart.svg" alt="hart">
+        <img src="../img/icon/hart.svg" alt="hart">
         <p class="text">by Createx Studio</p>
       </article>
-      <a class="btn top-btn" href="#logo"><img src="img/icon/arrow.svg" alt="top"></a>
+      <a class="btn top-btn" href="#logo"><img src="../img/icon/arrow.svg" alt="top"></a>
     </section>
   </footer>
 </body>

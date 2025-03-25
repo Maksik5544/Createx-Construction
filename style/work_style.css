@@ -1,0 +1,27 @@
+.main {
+    position: relative;
+}
+
+.block__items {
+    position: absolute;
+    gap: 20px;
+    left: 18%;
+    top: -6%;
+}
+
+.block__item {
+    width: 230px;
+    height: 154px;
+    background: white;
+    border-radius: 5px;
+    align-content: center;
+    text-align: center;
+}
+
+.block__item:hover, 
+.block__item:hover .item__text, 
+.block__item:hover path {
+    background: var(--orange);
+    fill: white;
+    color: white;
+}

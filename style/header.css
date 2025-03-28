@@ -7,16 +7,18 @@
 
 .bg {
   position: relative;
-  padding: 2rem 21.5rem 4rem;
+  height: 100%;
+  padding: 0 345px;
+  padding-top: 2rem;
   z-index: 0;
 }
 
 .menu {
   display: grid;
-  grid-template-columns: .5fr 1fr 1fr;
+  grid-template-columns: .3fr 1fr .6fr;
   justify-items: start;
   align-items: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .list {
@@ -57,7 +59,7 @@
 
 .header__img-bg {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
   z-index: -1;
   width: 975px;
@@ -77,8 +79,7 @@
 
 .header__title {
   font-size: 72px;
-  line-height: 93.6px;
-  letter-spacing: 1;
+  line-height: 120%;
   margin: 2rem 0;
 }
 
@@ -148,31 +149,34 @@
   margin: 0 1rem;
 }
 
-.section__constructive-decision {
-  height: 570px;
-  background: var(--gray200);
-  position: relative;
+/*header_How to Build Climate Change-Resilient Infrastructure*/
+
+.wrapper-media-social {
+  display: flex;
+  justify-content: space-between;
 }
 
-.img__constructive-decision {
-  max-width: 490px;
-  max-height: 550px;
+.media__item {
+font-family: Ubuntu;
+font-size: 16px;
+line-height: 160%;
+}
+
+.social {
+  gap: 12px;
+  align-items: center;
+}
+
+.header__img_bottom-bg {
+  max-width: 1230px;
+  max-height: 500px;
   position: absolute;
-  left: 15%;
-  bottom: -3%;
+  bottom: -90%;
 }
 
-.container__constructive-decision {
-  margin-left: 55%;
-  align-content: center;
-}
+/*available_positions*/
 
-.list__constructive-decision {
-  margin-top: 2rem;
-  flex-direction: column;
-}
-
-.item__constructive-decision {
-  margin: 1rem 0;
-  list-style-image: url(img/icon/check.svg);
+.header__img-bg_available-positions {
+bottom: 0;
+height: 506px;
 }

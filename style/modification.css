@@ -2,6 +2,10 @@
   color: var(--orange);
 }
 
+.--no-hidden {
+  overflow: visible;
+}
+
 .news__contaier_homepage {
   margin: 2rem auto;
   max-width: 1280px;

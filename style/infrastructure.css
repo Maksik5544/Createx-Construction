@@ -1,0 +1,154 @@
+.padding-main {
+  padding: 31rem 34.5rem 10rem;
+}
+
+.wrapper-text {
+  margin: 80px 0;
+}
+
+.main__text {
+  margin: 1.5rem 0;
+}
+
+.main__text,
+.item__list-style-image {
+  color: var(--gray800);
+}
+
+.text_quotes {
+  margin: 3rem 0;
+  margin-left: 60px;
+  position: relative;
+}
+
+.text_quotes::before {
+  content: url(../img/icon/kawichki.svg);
+  position: absolute;
+  top: 0;
+  left: -60px;
+}
+
+.list-style-image {
+  margin: 1rem 0;
+  list-style-image: url(../img/icon/check.svg);
+  list-style-position: inside;
+}
+
+.item__list-style-image {
+  margin: 10px 0;
+}
+
+.social {
+  margin-top: 3.5rem;
+}
+
+.social__item_bold {
+  font-weight: 700;
+  color: var(--gray900);
+}
+
+.comments {
+  text-align: center;
+}
+
+.comments__title {
+  margin-bottom: 60px;
+}
+
+.comments__container {
+  max-width: 810px;
+  display: flex;
+  justify-content: center;
+}
+
+.comment {
+  display: flex;
+  gap: 1rem;
+  padding: 5px;
+  text-align: start;
+  border-radius: 8px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.comment:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.author {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--gray900);
+}
+
+.date {
+  margin-bottom: 8px;
+}
+
+.right {
+  flex-grow: 1;
+}
+
+.comment__text {
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: var(--gray800);
+}
+
+.comment__text span {
+  color: var(--orange);
+}
+
+.reply {
+ color: var(--gray700);
+}
+
+.reply:hover {
+  text-decoration: underline;
+  color: var(--orange);
+}
+
+.reply:hover .path__reply {
+  text-decoration: underline;
+  fill: var(--orange);
+}
+
+.leave-coments {
+  text-align: center;
+}
+
+.leave-coments__title {
+  margin-bottom: 3rem;
+}
+
+.leave-coments__form {
+  text-align: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .5fr 1fr .5fr;
+  column-gap: 30px;
+  padding: 5px;
+}
+
+.leave-coments__form .leave-coments__text_type-comment {
+  grid-column: span 2;
+  grid-row-start: 2;
+}
+
+.leave-coments__form .leave-coments__input_type-comment {
+  height: 100px;
+}
+
+.leave-coments__form .leave-coments__button {
+  width: 215px;
+  height: 52px;
+  grid-column: span 2;
+  margin: auto;
+}

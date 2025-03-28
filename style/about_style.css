@@ -65,12 +65,12 @@
 }
 
 .text__direct_paragraph1::before {
-  content: url(img/icon/kawichki.svg);
+  content: url(../img/icon/kawichki.svg);
   left: 15%;
 }
 
 .text__direct_paragraph2::after {
-  content: url(img/icon/podpis.svg);
+  content: url(../img/icon/podpis.svg);
   right: 25%;
   bottom: 11%;
 }

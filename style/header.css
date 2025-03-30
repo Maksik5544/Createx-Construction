@@ -21,19 +21,8 @@
   margin-bottom: 2rem;
 }
 
-.list {
-  display: flex;
-  z-index: 10;
-}
-
 .menu__list {
   gap: 2rem;
-}
-
-.link {
-  font-weight: 700;
-  line-height: 160%;
-  color: var(--gray800);
 }
 
 .item_contact {
@@ -89,6 +78,104 @@
   line-height: 30px;
 }
 
+/*HEADER_HOMEPAGE*/
+.homepage-header {
+  height: 1070px;
+}
+
+.homepage-menu {
+  margin: 0;
+  padding: 1rem 21.5rem;
+}
+
+.header__content {
+  background: url(../img/Homepage/bg-image_header.jpg) center/cover, no-repeat;
+  box-sizing: border-box;
+  width: 100%;
+  height: 988px;
+  align-content: center;
+}
+
+.title__content {
+  max-width: 610px;
+  color: white;
+  font-size: 72px;
+  line-height: 93.6px;
+  letter-spacing: 1px;
+}
+
+.title__content_span {
+  color: var(--orange);
+}
+
+.text__content {
+  max-width: 500px;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  margin: 2rem 0 5rem;
+}
+
+.header__content_block-buttons {
+justify-content: space-between;
+max-width: 526px;
+}
+
+.header__content_button-left {
+  width: 278px;
+  height: 52px;
+  color: white;
+  border: white solid 1px;
+}
+
+.header__content_button-right {
+  width: 224px;
+  height: 52px;
+}
+
+.list__content {
+  margin-top: 12%;
+}
+
+.item__content {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  color: rgba(255, 255, 255, 0.445);
+  width: 178px;
+  height: 54px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.445);
+  margin: 0 .5rem;
+}
+
+.item__content:hover {
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+.next-previous__button {
+  text-align: center;
+  align-content: center;
+  background: rgba(255, 255, 255, 0.411);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 52.5%;
+}
+
+.next-previous__button:hover {
+  background: white;
+}
+
+.previous-button {
+  left: 2%;
+}
+
+.next-button {
+  right: 2%;
+}
+
 /*header_modern*/
 
 .header__cottage {
@@ -99,11 +186,17 @@
 .header__img-bg_cottage {
   width: 600px;
   height: 820px;
+  top: 0;
 }
 
 .ready-project {
-  max-width: 1240px;
+  width: 1230px;
   overflow: hidden;
+  position: relative;
+}
+
+.ready-project__button {
+  top: 38%;
 }
 
 .finished-foto__ready-project {
@@ -112,7 +205,7 @@
 }
 
 .preview {
-  max-width: 1230px;
+  max-width: 100%;
 }
 
 .project-goal {
@@ -152,14 +245,27 @@
 /*header_How to Build Climate Change-Resilient Infrastructure*/
 
 .wrapper-media-social {
+  margin-top: 3rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .media__item {
-font-family: Ubuntu;
-font-size: 16px;
-line-height: 160%;
+  font-family: Ubuntu;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--gray700);
+}
+
+.media__item_data {
+  list-style-image: url(../img/icon/Clock.svg);
+  list-style-position: inside;
+}
+
+.media__item_comment {
+  list-style-image: url(../img/icon/Chat-gray.svg);
+  list-style-position: inside;
 }
 
 .social {
@@ -171,12 +277,19 @@ line-height: 160%;
   max-width: 1230px;
   max-height: 500px;
   position: absolute;
-  bottom: -90%;
+  bottom: -67%;
 }
 
 /*available_positions*/
 
 .header__img-bg_available-positions {
-bottom: 0;
-height: 506px;
+  bottom: 0;
+  height: 506px;
+}
+
+/* Header_NEWS*/
+
+.header-news__img-bg {
+  width: 1080px;
+  height: 100%;
 }

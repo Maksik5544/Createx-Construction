@@ -9,15 +9,14 @@
   <link rel="stylesheet" href="../style/reset.css">
   <link rel="stylesheet" href="../style/general_style.css">
   <link rel="stylesheet" href="../style/header.css">
-  <link rel="stylesheet" href="../style/homepage_header.css">
-  <link rel="stylesheet" href="../style/homepage.css">
+  <link rel="stylesheet" href="../style/main.css">
   <link rel="stylesheet" href="../style/footer.css">
   <link rel="stylesheet" href="../style/modification.css">
   <title>Homepage</title>
 </head>
 
-<body>
-  <header class="header">
+<body id="top-page">
+  <header class="header homepage-header">
     <nav class="menu homepage-menu">
       <a href="homepage.html"><img class="logo header__logo" id="logo" src="../img/logo/logo.png" alt="logo"></a>
       <ul class="list menu__list">
@@ -56,17 +55,16 @@
       </ul>
     </nav>
     <section class="section content header__content">
-      <h1 class="title title__content">CREATE<span>X</span> CONSTRUCTION</h1>
+      <h1 class="title title__content">CREATE<span class="title__content_span">X</span> CONSTRUCTION</h1>
       <p class="text text__content">
         Cras ultrices leo vitae non viverra. Fringilla nisi quisque
         consequat, dignissim vitae proin ipsum sed. Pellentesque nec
         turpis purus eget pellentesque integer ipsum elementum felis.
       </p>
-      <div class="buttons__content">
-        <form action="#">
-          <button type="button" class="button header__button button--left">Learn more about us</button>
-          <button type="button" class="button header__button button--rights">SUBMIT REQUEST</button>
-        </form>
+      <div class="block-buttons header__content_block-buttons">
+        <a href="about_us.html" class="button button-perspicuus header__content_button-left">Learn more about us</a>
+        <button form="wtf.php" type="button" class="button button-orange header__content_button-right">SUBMIT
+          REQUEST</button>
       </div>
 
       <ul class="list list__content">
@@ -75,11 +73,28 @@
         <li class="item item__content">03</li>
         <li class="item item__content">04</li>
       </ul>
+
+      <div class="block-buttons block-buttons__next-previous">
+        <button class="next-previous__button previous-button" type="button">
+          <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M6.20711 11.2071C5.81658 11.5976 5.18342 11.5976 4.79289 11.2071L0.292892 6.70711C-0.0976315 6.31658 -0.0976315 5.68342 0.292892 5.29289L4.79289 0.792893C5.18342 0.402369 5.81658 0.402369 6.20711 0.792893C6.59763 1.18342 6.59763 1.81658 6.20711 2.20711L3.41421 5L17 5C17.5523 5 18 5.44772 18 6C18 6.55228 17.5523 7 17 7L3.41421 7L6.20711 9.79289C6.59763 10.1834 6.59763 10.8166 6.20711 11.2071Z"
+              fill="#424551" />
+          </svg>
+        </button>
+        <button class="next-previous__button next-button" type="button">
+          <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z"
+              fill="#424551" />
+          </svg>
+        </button>
+      </div>
     </section>
   </header>
 
-  <main class="main">
-    <header class="main__header">
+  <main class="main homepage-main">
+    <header class="homepage-main__header">
       <section class=" section construction-content">
         <h2 class="title">We are Createx Construction Bureau</h2>
         <p class="text construction-content__text">We are rightfully considered to be the best construction company in
@@ -128,18 +143,18 @@
         <form class="form" action="wtf.php">
           <ul class="list form__list">
             <li class="item form__item">
-              <p class="text form__text text_l">Name</p>
-              <input class="form-input" type="name" name="name" placeholder="Your name">
+              <p class="form__text">Name</p>
+              <input class="form-input form-quest__input" type="name" name="name" placeholder="Your name">
             </li>
             <li class="item form__item">
-              <p class="text form__text text_l">Phone</p>
-              <input class="form-input" type="tel" name="tel" placeholder="Your phone number">
+              <p class="form__text">Phone</p>
+              <input class="form-input form-quest__input" type="tel" name="tel" placeholder="Your phone number">
             </li>
             <li class="item form__item item_message">
-              <p class="text form__text text_l">Message</p>
-              <input class="form-input" type="text" name="text" placeholder="Your message">
+              <p class="form__text">Message</p>
+              <input class="form-input form-quest__input" type="text" name="text" placeholder="Your message">
             </li>
-            <button class="button form-quest__button" tupe="button">Send</button>
+            <button class="button button-orange form-quest__button" tupe="button">Send</button>
           </ul>
         </form>
       </div>
@@ -213,7 +228,7 @@
 
       <div class="link-services__section">
         <h3 class="subtitle link-services__subtitle">Learn more about our services</h3>
-        <a href="services.html" class="btn btn__services--link" type="button">View services</a>
+        <a href="services.html" class="button button-orange link-services__button" type="button">View services</a>
       </div>
       <img class="bg__image-services" src="../img/Homepage/bg-image-Our services.png" alt="bg-image">
     </section>
@@ -224,7 +239,7 @@
           Browse our selected projects
           and learn more about our work
         </h2>
-        <div class="block__buttons">
+        <div class="block-buttons">
           <button class="button__list button__list--hover" type="button">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="arrow__list" fill-rule="evenodd" clip-rule="evenodd"
@@ -247,7 +262,7 @@
           <article class="link__project">
             <h3>Red Finger Building</h3>
             <p class="text project__text text--l">Business Centers</p>
-            <a href="modern_cottage.html" class=" btn btn__project">View Project</a>
+            <a href="modern_cottage.html" class="button button-perspicuus button__project">View Project</a>
           </article>
         </div>
 
@@ -256,7 +271,7 @@
           <article class="link__project">
             <h3>Cubes Building</h3>
             <p class="text project__text text--l">Business Centers</p>
-            <a href="modern_cottage.html" class=" btn btn__project">View Project</a>
+            <a href="modern_cottage.html" class="button button-perspicuus button__project">View Project</a>
           </article>
         </div>
 
@@ -265,13 +280,13 @@
           <article class="link__project">
             <h3>The Pencil Building</h3>
             <p class="text project__text text--l">Stores & Malls</p>
-            <a href="modern_cottage.html" class=" btn btn__project">View Project</a>
+            <a href="modern_cottage.html" class="button button-perspicuus button__project">View Project</a>
           </article>
         </div>
       </div>
-      <div class="portfolio__link">
+      <div class="portfolio-link">
         <h3 class="subtitle portfolio__subtitle">Explore all our works</h3>
-        <a href="#portfolio.html" class="btn">View portfolio</a>
+        <a href="#portfolio.html" class="button button-orange portfolio-link__button">View portfolio</a>
       </div>
     </section>
 
@@ -308,7 +323,7 @@
         </p>
         <div class="reviwes__swipe">
           <p class="text text--l"><span>Shawn Edwards</span><br>Position, Company name</p>
-          <div class="reviwes__buttons">
+          <div class="block-buttons reviwes__buttons">
             <button class="button__list" type="button"><img src="../img/icon/arrow_Left.svg" alt=""></button>
             <button class="button__list" type="button"><img src="../img/icon/arrow_rights_black.svg" alt=""></button>
           </div>
@@ -380,7 +395,7 @@
         </section>
         <article class="news-posts">
           <h3 class="subtitle news-post__subtitle">Explore all our news posts</h3>
-          <a class="btn news__btn" href="news.html">View all news</a>
+          <a class="button news__button button-orange" href="news.html">View all news</a>
         </article>
       </section>
     </section>
@@ -390,20 +405,25 @@
     <section class="sections footer__sections_top">
       <div class="form-wrapper">
         <h2 class="title footer__form-title">A quick way to discuss details</h2>
-        <form class="form" action="wtf.php">
-          <p class="text form__text">Name*</p>
+        <form id="footer__form" class="form" action="wtf.php">
+          <p class="text--l form__text">Name*</p>
           <input class="form-input footer__form-input" type="name" name="name" placeholder="Your name">
-          <p class="text form__text">Phone*</p>
+          <p class="text--l form__text">Phone*</p>
           <input class="form-input footer__form-input" type="tel" name="tel" placeholder="Your phone number">
-          <p class="text form__text">Email</p>
+          <p class="text--l form__text">Email</p>
           <input class="form-input footer__form-input" type="email" name="email" placeholder="Your working email">
-          <p class="text form__text">Message*</p>
-          <input class="footer__form-input" type="text" name="text" placeholder="Your message">
-          <input class="form-input footer__form-input input_checkbox" type="checkbox" name="checkbox">
-          I agree to recieve communications from Createx Construction Bureau.
-          </input>
-          <button class="button footer-form__button" tupe="submit">Send request</button>
+          <p class="text--l form__text">Message*</p>
+          <input class="form-input footer__form-input footer__form-input_massage" type="text" name="text"
+            placeholder="Your message">
+            <div class="footer__form_checkbox-request">
+              <label class="checkbox-container">
+                <input class="form-input input_checkbox" type="checkbox" checked>
+                <span class="checkmark"></span>
+              </label>
+              <p class="form__text text--l">I agree to receive communications from Createx Construction Bureau.</p>
+            </div>
         </form>
+        <button form="footer__form" class="button button-orange footer__form_button" tupe="submit">Send request</button>
       </div>
     </section>
 
@@ -449,7 +469,7 @@
         <h2 class="title subscribe__title">Let's stay in touch</h2>
         <form class="form" action="wtf.php">
           <input class="input__subscribe" type="email" name="email" placeholder="Your email address">
-          <button class="button footer-form__button button__subscribe" type="submit">subscribe</button>
+          <button class="button button-orange button__subscribe" type="submit">subscribe</button>
         </form>
         <p class="text subscribe__text">
           *Subscribe to our newsletter to receive communications and early updates from Createx
@@ -514,7 +534,7 @@
         <img src="../img/icon/hart.svg" alt="hart">
         <p class="text">by Createx Studio</p>
       </article>
-      <a class="button top-btn" href="#logo"><img src="../img/icon/arrow.svg" alt="top"></a>
+      <a class="button button-orange top-button" href="#top-page"><img src="../img/icon/arrow.svg" alt="top"></a>
     </section>
   </footer>
 </body>

@@ -9,13 +9,13 @@
   <link rel="stylesheet" href="../style/reset.css">
   <link rel="stylesheet" href="../style/general_style.css">
   <link rel="stylesheet" href="../style/header.css">
-  <link rel="stylesheet" href="../style/main_design.css">
+  <link rel="stylesheet" href="../style/main.css">
   <link rel="stylesheet" href="../style/footer.css">
   <link rel="stylesheet" href="../style/modification.css">
   <title>Interior Design</title>
 </head>
 
-<body>
+<body id="top-page">
   <header class="header">
     <div class="bg">
       <nav class="menu">
@@ -86,7 +86,7 @@
         <h2 class="title">That’s how we do it</h2>
         <ul class="step__list">
           <li class="step__item">
-            <p class="number">01</p>
+            <p class="number dotted-line">01</p>
             <p class="text">
               <span>Work Estimate</span>
               <br>Culpa nostrud commodo ea consequat
@@ -95,7 +95,7 @@
           </li>
 
           <li class="step__item">
-            <p class="number">02</p>
+            <p class="number dotted-line">02</p>
             <p class="text">
               <span>Contract</span>
               <br>Laoreet ultrices curabitur luctus
@@ -105,7 +105,7 @@
           </li>
 
           <li class="step__item">
-            <p class="number">03</p>
+            <p class="number dotted-line">03</p>
             <p class="text">
               <span>Mobilization </span>
               <br>Odio massa scelerisque purus arcu sed
@@ -160,7 +160,7 @@
           </p>
         </li>
       </ul>
-      <a href="#" class="btn benefits__btn">Discuss a project</a>
+      <a href="#" class="button button-orange button__values_benefits">Discuss a project</a>
     </section>
 
     <section class="section project">
@@ -191,7 +191,7 @@
           <article class="link__project">
             <h3>Kids Bedroom With Decorations</h3>
             <p class="text project__text text--l">Apartments & flats</p>
-            <a href="modern_cottage.html" class=" btn btn__project">View Project</a>
+            <a href="modern_cottage.html" class="button button-perspicuus button__project">View Project</a>
           </article>
         </div>
 
@@ -200,7 +200,7 @@
           <article class="link__project">
             <h3>Modern Double Bedroom</h3>
             <p class="text project__text text--l">Apartments & flats</p>
-            <a href="modern_cottage.html" class=" btn btn__project">View Project</a>
+            <a href="modern_cottage.html" class="button button-perspicuus button__project">View Project</a>
           </article>
         </div>
 
@@ -209,13 +209,13 @@
           <article class="link__project">
             <h3>Scandinavian Style Interior</h3>
             <p class="text project__text text--l">Private houses</p>
-            <a href="modern_cottage.html" class=" btn btn__project">View Project</a>
+            <a href="modern_cottage.html" class="button button-perspicuus button__project">View Project</a>
           </article>
         </div>
       </div>
-      <div class="portfolio__link">
+      <div class="portfolio-link">
         <h3 class="subtitle portfolio__subtitle">Explore all our works</h3>
-        <a href="#portfolio.html" class="btn">View portfolio</a>
+        <a href="Infrastructure.html" class="button button-orange portfolio-link__button">View portfolio</a>
       </div>
     </section>
 
@@ -426,9 +426,9 @@
         <tfoot>
           <tr>
             <td></td>
-            <td><a href="#portfolio.html" class="btn table__btn">send request</a></td>
-            <td><a href="#portfolio.html" class="btn table__btn">send request</a></td>
-            <td><a href="#portfolio.html" class="btn table__btn">send request</a></td>
+            <td><a href="#portfolio.html" class="button button-perspicuus table__button">send request</a></td>
+            <td><a href="#portfolio.html" class="button button-perspicuus table__button">send request</a></td>
+            <td><a href="#portfolio.html" class="button button-perspicuus table__button">send request</a></td>
           </tr>
         </tfoot>
 
@@ -463,20 +463,25 @@
     <section class="sections footer__sections_top">
       <div class="form-wrapper">
         <h2 class="title footer__form-title">A quick way to discuss details</h2>
-        <form class="form" action="wtf.php">
-          <p class="text form__text">Name*</p>
+        <form id="footer__form" class="form" action="wtf.php">
+          <p class="text--l form__text">Name*</p>
           <input class="form-input footer__form-input" type="name" name="name" placeholder="Your name">
-          <p class="text form__text">Phone*</p>
+          <p class="text--l form__text">Phone*</p>
           <input class="form-input footer__form-input" type="tel" name="tel" placeholder="Your phone number">
-          <p class="text form__text">Email</p>
+          <p class="text--l form__text">Email</p>
           <input class="form-input footer__form-input" type="email" name="email" placeholder="Your working email">
-          <p class="text form__text">Message*</p>
-          <input class="footer__form-input" type="text" name="text" placeholder="Your message">
-          <input class="form-input footer__form-input input_checkbox" type="checkbox" name="checkbox">
-          I agree to recieve communications from Createx Construction Bureau.
-          </input>
-          <button class="button footer-form__button" tupe="submit">Send request</button>
+          <p class="text--l form__text">Message*</p>
+          <input class="form-input footer__form-input footer__form-input_massage" type="text" name="text"
+            placeholder="Your message">
+            <div class="footer__form_checkbox-request">
+              <label class="checkbox-container">
+                <input class="form-input input_checkbox" type="checkbox" checked>
+                <span class="checkmark"></span>
+              </label>
+              <p class="form__text text--l">I agree to receive communications from Createx Construction Bureau.</p>
+            </div>
         </form>
+        <button form="footer__form" class="button button-orange footer__form_button" tupe="submit">Send request</button>
       </div>
     </section>
 
@@ -522,7 +527,7 @@
         <h2 class="title subscribe__title">Let's stay in touch</h2>
         <form class="form" action="wtf.php">
           <input class="input__subscribe" type="email" name="email" placeholder="Your email address">
-          <button class="button footer-form__button button__subscribe" type="submit">subscribe</button>
+          <button class="button button-orange button__subscribe" type="submit">subscribe</button>
         </form>
         <p class="text subscribe__text">
           *Subscribe to our newsletter to receive communications and early updates from Createx
@@ -587,10 +592,9 @@
         <img src="../img/icon/hart.svg" alt="hart">
         <p class="text">by Createx Studio</p>
       </article>
-      <a class="button top-btn" href="#logo"><img src="../img/icon/arrow.svg" alt="top"></a>
+      <a class="button button-orange top-button" href="#top-page"><img src="../img/icon/arrow.svg" alt="top"></a>
     </section>
   </footer>
-
 </body>
 
 </html>

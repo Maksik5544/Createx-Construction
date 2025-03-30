@@ -9,13 +9,13 @@
   <link rel="stylesheet" href="../style/reset.css">
   <link rel="stylesheet" href="../style/general_style.css">
   <link rel="stylesheet" href="../style/header.css">
-  <link rel="stylesheet" href="../style/about_style.css">
+  <link rel="stylesheet" href="../style/main.css">
   <link rel="stylesheet" href="../style/footer.css">
   <link rel="stylesheet" href="../style/modification.css">
   <title>About us</title>
 </head>
 
-<body>
+<body id="top-page">
   <header class="header">
     <div class="bg">
       <nav class="menu">
@@ -66,8 +66,8 @@
     </div>
   </header>
 
-  <main class="main">
-    <header class="section main__header">
+  <main class="main about-main">
+    <header class="section about-main__header">
       <ul class="list main__header_list">
         <li class="item main__header_item">
           <img src="../img/icon/ic-like_white.svg" alt="contract">
@@ -365,20 +365,25 @@
     <section class="sections footer__sections_top">
       <div class="form-wrapper">
         <h2 class="title footer__form-title">A quick way to discuss details</h2>
-        <form class="form" action="wtf.php">
-          <p class="text form__text">Name*</p>
+        <form id="footer__form" class="form" action="wtf.php">
+          <p class="text--l form__text">Name*</p>
           <input class="form-input footer__form-input" type="name" name="name" placeholder="Your name">
-          <p class="text form__text">Phone*</p>
+          <p class="text--l form__text">Phone*</p>
           <input class="form-input footer__form-input" type="tel" name="tel" placeholder="Your phone number">
-          <p class="text form__text">Email</p>
+          <p class="text--l form__text">Email</p>
           <input class="form-input footer__form-input" type="email" name="email" placeholder="Your working email">
-          <p class="text form__text">Message*</p>
-          <input class="footer__form-input" type="text" name="text" placeholder="Your message">
-          <input class="form-input footer__form-input input_checkbox" type="checkbox" name="checkbox">
-          I agree to recieve communications from Createx Construction Bureau.
-          </input>
-          <button class="button footer-form__button" tupe="submit">Send request</button>
+          <p class="text--l form__text">Message*</p>
+          <input class="form-input footer__form-input footer__form-input_massage" type="text" name="text"
+            placeholder="Your message">
+            <div class="footer__form_checkbox-request">
+              <label class="checkbox-container">
+                <input class="form-input input_checkbox" type="checkbox" checked>
+                <span class="checkmark"></span>
+              </label>
+              <p class="form__text text--l">I agree to receive communications from Createx Construction Bureau.</p>
+            </div>
         </form>
+        <button form="footer__form" class="button button-orange footer__form_button" tupe="submit">Send request</button>
       </div>
     </section>
 
@@ -424,7 +429,7 @@
         <h2 class="title subscribe__title">Let's stay in touch</h2>
         <form class="form" action="wtf.php">
           <input class="input__subscribe" type="email" name="email" placeholder="Your email address">
-          <button class="button footer-form__button button__subscribe" type="submit">subscribe</button>
+          <button class="button button-orange button__subscribe" type="submit">subscribe</button>
         </form>
         <p class="text subscribe__text">
           *Subscribe to our newsletter to receive communications and early updates from Createx
@@ -489,7 +494,7 @@
         <img src="../img/icon/hart.svg" alt="hart">
         <p class="text">by Createx Studio</p>
       </article>
-      <a class="button top-btn" href="#logo"><img src="../img/icon/arrow.svg" alt="top"></a>
+      <a class="button button-orange top-button" href="#top-page"><img src="../img/icon/arrow.svg" alt="top"></a>
     </section>
   </footer>
 
